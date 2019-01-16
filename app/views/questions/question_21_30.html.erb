@@ -1,0 +1,61 @@
+<%# if session[:question_type] == 'MP' %>
+ <!-- <h1 align="center" >Mini-Interest Profiler</h1>
+<%# else %>
+<h1 align="center" >Work Interest Profile</h1>
+<%# end %> -->
+<fieldset>
+  <section class="solidbody">
+
+<legend> <%= set_subheader("Work Interests") %> </legend><br>
+<%= form_for @quest, url: next_wizard_path, :method => :get do |f| %>
+<% question = 1 %>
+<table class="table table-striped table-bordered">
+				<thead>
+					    <tr>
+							<th width="5%"> </th>
+							<th width="15%"> <%= image_tag("strongly_dislike.png") %> <br> <%= "Strongly Dislike" %></th>
+							<th width="10%"> <%= image_tag("dislike.png")  %> <br> <%= "Dislike" %> </th>
+							<th width="10%"> <%= image_tag("unsure.png") %> <br> <%= "Unsure" %> </th>
+							<th width="10%"> <%= image_tag("like.png") %> <br> <%= "Like" %> </th>
+							<th width="15%"> <%= image_tag("strongly_like.png") %> <br> <%= "Strongly Like" %> </th>
+							<th width="35%">  </th>
+						</tr>
+					  </thead>
+			    <tbody>
+			    	<% question = 1 %>
+			    	<% answer = 0 %>
+			    	<% @questions.each do |key,val| %>
+			    	<% if (21..30).include?(question) %>
+			    		<tr>
+							<td> <%= question %></td>
+							<% count = 1 %>
+							<% ["Strongly Dislike","Dislike", "Unsure" ,"Strongly Like","Like"].each do |key1| %>
+							<% if session[params[:id]].present? %>
+								<%  if count == session[params[:id]].at(answer).to_i  %>
+	                            <td align="center"> <%= radio_button_tag(question, count , checked = true ) %></td>
+	                            <% else %>
+	                            <td align="center"> <%= radio_button_tag(question , count ) %></td>
+	                            <% end %>
+	                        <% else %>
+	                        <td align="center"> <%= radio_button_tag(question , count) %></td>
+	                        <% end %>
+                            <% count += 1 %>
+							<% end %>
+
+							<td> <%= key["interest"] %></td>
+
+     					</tr>
+     					<% answer += 1 %>
+                        	<% end %>
+						<% question += 1 %>
+					<% end %>
+			</table><br>
+			<%= link_to "Prev", previous_wizard_path, :class => 'btn btn-success' %>
+			<%= f.submit "Next", :class => 'btn btn-success' %>
+<% end %>
+
+
+
+ </section>
+</fieldset>
+

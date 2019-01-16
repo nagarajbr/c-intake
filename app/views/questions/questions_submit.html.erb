@@ -1,0 +1,76 @@
+<fieldset>
+  <section class="solidbody">
+
+<legend> <%= set_subheader("Explore Careers based on Work Interest") %> </legend><br>
+<div class="row">
+
+<%= form_for @quest, url: next_wizard_path, :method => :get , :html => { :id => "process" } do |f| %>
+<%= link_to "Back To Top Interests Areas", previous_wizard_path, :class => 'btn btn-default' %>
+<div class="row">
+  <div class="col-md-12">
+    <fieldset  id = "test_fieldset">
+    <legend style="width: auto" class="legend_group">Select Interest Area, Job Zone and click on submit to view Careers  </legend><br>
+    <div class="row">
+    <ul><div class="col-md-4">
+     <%= f.label "Interest Area" %>
+     <%= f.select :work_interest,@intrest_areas.map {|v| [ v['element_name'], v['element_name'] ] } %>
+     <%#= f.text_field :zone  %>
+    </div>
+    <div class="col-md-6">
+     <%= f.label "Job Zone " %>
+     <%= f.select :zone,@job_zone_desc.map {|v| [ v['name'], v['job_zone'] ] }%>
+     <%#= f.text_field :zone  %>
+    </div>
+    <div class="col-md-2">
+      <%= f.button  :submit ,:class => 'btn btn-success'  %>
+    </div>
+     </div><br>
+  </fieldset><br>
+<% if @job_zone_desc.present? %>
+  <% @job_zone_desc.each do |key,val| %>
+    <table class="table table-striped table-bordered">
+        <tbody>
+          <tr>
+            <td> <b> <%= key['name'].split(":").first %> </b> </td>
+            <td>  <%= key['name'].split(":").last %> </td>
+          </tr>
+          <tr>
+            <td> <b> Experience </b> </td>
+            <td> <%= key['experience'] %> </td>
+          </tr>
+          <tr>
+            <td> <b> Education </b> </td>
+            <td> <%= key['education'] %> </td>
+          </tr>
+          <tr>
+            <td> <b> Job Training </b> </td>
+            <td> <%= key['job_training'] %> </td>
+          </tr>
+          <tr>
+            <td> <b> Examples </b> </td>
+            <td> <%= key['examples'] %> </td>
+          </tr>
+          <tr>
+            <!-- <td>
+
+              <%#= f.submit "Fetch", :class => 'btn btn-success' ,:id => "submit" %>
+              <%#= f.button  :submit  , name: "Zone" ,value: key["job_zone"]  ,:class => 'btn btn-success' %>
+            </td> -->
+
+
+          </tr>
+      </tbody>
+    </table><br>
+
+    <% end %>
+
+    <% end %>
+    </div> <br>
+  <% end %>
+
+
+ </section>
+</fieldset>
+
+
+

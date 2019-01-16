@@ -1,0 +1,49 @@
+<%# if session[:question_type] == 'MP' %>
+ <!-- <h1 align="center" >Mini-Interest Profiler</h1>
+<%# else %>
+<h1 align="center" >Work Interest Profile</h1>
+<%# end %> -->
+<fieldset>
+  <section class="solidbody">
+
+<legend> <%= set_subheader("Your Top Two Work Interests Areas") %> </legend><br>
+<%= form_for @quest, url: next_wizard_path, :method => :get do |f| %>
+
+<% question = 1 %>
+<table class="table table-striped table-bordered">
+				<thead>
+					    <tr>
+
+							<th> <%=  "Work Interests Area" %></th>
+							<!-- <th> <%#=  "Score" %> </th> -->
+							<th> <%=  "Description" %> </th>
+
+						</tr>
+					  </thead>
+			    <tbody>
+
+			    	<%  @intrest_areas.each do |key,val| %>
+
+				    		<tr>
+								<td> <%= key["element_name"] %></td>
+								<!-- <td> <%#= area["score"] %></td> -->
+								<td> <%= key["description"] %></td>
+	     					</tr>
+
+					<% end %>
+				</tbody>
+			</table><br>
+			<% if session[:question_type]  == "IP"	 %>
+			<%= link_to "Prev", wizard_path(:question_51_60), :class => 'btn btn-success' %>
+			<% else	 %>
+			<%= link_to "Prev", wizard_path(:question_21_30), :class => 'btn btn-success' %>
+			<% end	 %>
+			<%= link_to "Next", next_wizard_path, :class => 'btn btn-success' %>
+			<%#= f.submit "Next", :class => 'btn btn-primary' %>
+
+<% end %>
+
+
+ </section>
+</fieldset>
+
