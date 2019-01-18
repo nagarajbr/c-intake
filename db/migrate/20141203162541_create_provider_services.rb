@@ -1,4 +1,4 @@
-class CreateProviderServices < ActiveRecord::Migration
+class CreateProviderServices < ActiveRecord::Migration[5.2]
   def change
     create_table :provider_services do |t|
     	t.references :provider, index: true, null: false

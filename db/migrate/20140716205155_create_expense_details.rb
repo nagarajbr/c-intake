@@ -1,4 +1,4 @@
-class CreateExpenseDetails < ActiveRecord::Migration
+class CreateExpenseDetails < ActiveRecord::Migration[5.2]
   def change
     create_table :expense_details do |t|
       t.references :expense, index: true

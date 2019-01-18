@@ -1,4 +1,4 @@
-class AlterTableProgramUnit3 < ActiveRecord::Migration
+class AlterTableProgramUnit3 < ActiveRecord::Migration[5.2]
   def change
   	add_column :program_units, :reeval_date, :date
   end

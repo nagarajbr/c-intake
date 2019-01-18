@@ -1,4 +1,4 @@
-class AlterProgramMemberSummariesTable2 < ActiveRecord::Migration
+class AlterProgramMemberSummariesTable2 < ActiveRecord::Migration[5.2]
   def up
   	remove_column :program_member_summaries, :bu_sum_result
   	remove_column :program_member_summaries, :res_pass_fail_ind

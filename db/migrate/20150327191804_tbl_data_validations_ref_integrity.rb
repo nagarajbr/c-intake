@@ -1,4 +1,4 @@
-class TblDataValidationsRefIntegrity < ActiveRecord::Migration
+class TblDataValidationsRefIntegrity < ActiveRecord::Migration[5.2]
   def change
   	 execute <<-SQL
     	ALTER TABLE data_validations

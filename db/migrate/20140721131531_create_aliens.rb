@@ -1,4 +1,4 @@
-class CreateAliens < ActiveRecord::Migration
+class CreateAliens < ActiveRecord::Migration[5.2]
   def change
     create_table :aliens do |t|
       t.references :client, index: true,null:false

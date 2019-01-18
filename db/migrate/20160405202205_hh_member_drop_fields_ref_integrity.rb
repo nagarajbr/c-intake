@@ -1,4 +1,4 @@
-class HhMemberDropFieldsRefIntegrity < ActiveRecord::Migration
+class HhMemberDropFieldsRefIntegrity < ActiveRecord::Migration[5.2]
   def change
   	remove_column :household_members, :current_step_partial
   	remove_column :household_members, :education_add_flag

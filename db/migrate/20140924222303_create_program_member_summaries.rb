@@ -1,4 +1,4 @@
-class CreateProgramMemberSummaries < ActiveRecord::Migration
+class CreateProgramMemberSummaries < ActiveRecord::Migration[5.2]
   def change
     create_table :program_member_summaries do |t|
       t.integer  :run_id

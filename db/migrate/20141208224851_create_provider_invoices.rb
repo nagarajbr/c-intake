@@ -1,4 +1,4 @@
-class CreateProviderInvoices < ActiveRecord::Migration
+class CreateProviderInvoices < ActiveRecord::Migration[5.2]
   def change
     create_table :provider_invoices do |t|
     	 t.references :provider, index: true, null: false

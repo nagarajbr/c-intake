@@ -1,4 +1,4 @@
-class TblInStatePaymentsRefIntegrity < ActiveRecord::Migration
+class TblInStatePaymentsRefIntegrity < ActiveRecord::Migration[5.2]
   def change
   	change_column :in_state_payments, :program_unit_id, :integer, null:false
   	change_column :in_state_payments, :client_id, :integer, null:false

@@ -1,4 +1,4 @@
-class CreateRubyElementReltns < ActiveRecord::Migration
+class CreateRubyElementReltns < ActiveRecord::Migration[5.2]
   def change
     create_table :ruby_element_reltns do |t|
       t.integer :parent_element_id

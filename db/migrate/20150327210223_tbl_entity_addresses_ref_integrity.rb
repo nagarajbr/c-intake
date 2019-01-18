@@ -1,4 +1,4 @@
-class TblEntityAddressesRefIntegrity < ActiveRecord::Migration
+class TblEntityAddressesRefIntegrity < ActiveRecord::Migration[5.2]
   def change
   	 execute <<-SQL
     	ALTER TABLE entity_addresses

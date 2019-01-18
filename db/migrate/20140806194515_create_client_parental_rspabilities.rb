@@ -1,4 +1,4 @@
-class CreateClientParentalRspabilities < ActiveRecord::Migration
+class CreateClientParentalRspabilities < ActiveRecord::Migration[5.2]
   def change
     create_table :client_parental_rspabilities do |t|
       t.references :client_relationship, index: true,null:false

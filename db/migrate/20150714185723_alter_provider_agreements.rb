@@ -1,4 +1,4 @@
-class AlterProviderAgreements < ActiveRecord::Migration
+class AlterProviderAgreements < ActiveRecord::Migration[5.2]
   def change
   	 remove_column :provider_agreements, :status
   	 remove_column :provider_agreements, :requested_by

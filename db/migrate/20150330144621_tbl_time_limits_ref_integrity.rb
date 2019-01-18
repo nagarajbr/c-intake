@@ -1,4 +1,4 @@
-class TblTimeLimitsRefIntegrity < ActiveRecord::Migration
+class TblTimeLimitsRefIntegrity < ActiveRecord::Migration[5.2]
   def change
   	 execute <<-SQL
     	ALTER TABLE time_limits

@@ -1,4 +1,4 @@
-class TblApplicationMembersRefIntegrity < ActiveRecord::Migration
+class TblApplicationMembersRefIntegrity < ActiveRecord::Migration[5.2]
   def change
   	# 1.referential integrity
   	 execute <<-SQL

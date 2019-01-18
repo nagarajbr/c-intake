@@ -1,4 +1,4 @@
-class CreateProgramMonthSummaries < ActiveRecord::Migration
+class CreateProgramMonthSummaries < ActiveRecord::Migration[5.2]
   def change
     create_table :program_month_summaries do |t|
        t.integer  :run_id

@@ -1,4 +1,4 @@
-class CreateEducationsVersions < ActiveRecord::Migration
+class CreateEducationsVersions < ActiveRecord::Migration[5.2]
   def change
     create_table :educations_versions do |t|
     t.string   :item_type, :null => false

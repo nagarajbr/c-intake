@@ -1,4 +1,4 @@
-class TblPaymentLineItemsRefIntegrity < ActiveRecord::Migration
+class TblPaymentLineItemsRefIntegrity < ActiveRecord::Migration[5.2]
   def change
   	 execute <<-SQL
     	ALTER TABLE payment_line_items

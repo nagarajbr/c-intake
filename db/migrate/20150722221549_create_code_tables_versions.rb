@@ -1,4 +1,4 @@
-class CreateCodeTablesVersions < ActiveRecord::Migration
+class CreateCodeTablesVersions < ActiveRecord::Migration[5.2]
   def change
     create_table :code_tables_versions do |t|
       t.string   :item_type, :null => false

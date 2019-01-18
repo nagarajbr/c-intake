@@ -1,4 +1,4 @@
-class CreateRuleDisallows < ActiveRecord::Migration
+class CreateRuleDisallows < ActiveRecord::Migration[5.2]
   def change
     create_table :rule_disallows do |t|
       t.references :rule, index: true,null:false

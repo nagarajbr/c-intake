@@ -1,4 +1,4 @@
-class AlterUsersTable < ActiveRecord::Migration
+class AlterUsersTable < ActiveRecord::Migration[5.2]
   def change
   	rename_column :users, :email_id, :email
   	add_column :users, :uid, :string

@@ -1,4 +1,4 @@
-class AlterTableEmployer1 < ActiveRecord::Migration
+class AlterTableEmployer1 < ActiveRecord::Migration[5.2]
   def up
   	remove_column :employers, :employer_address_line1
   	remove_column :employers, :employer_address_line2

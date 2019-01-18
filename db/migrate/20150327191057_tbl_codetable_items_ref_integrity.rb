@@ -1,4 +1,4 @@
-class TblCodetableItemsRefIntegrity < ActiveRecord::Migration
+class TblCodetableItemsRefIntegrity < ActiveRecord::Migration[5.2]
   def change
 
   	change_column :codetable_items, :code_table_id, :integer, null:false

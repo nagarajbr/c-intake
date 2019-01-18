@@ -1,4 +1,4 @@
-class CreateProviderAgreementAreas < ActiveRecord::Migration
+class CreateProviderAgreementAreas < ActiveRecord::Migration[5.2]
   def change
     create_table :provider_agreement_areas do |t|
     	t.references :provider_agreement, index: true, null: false

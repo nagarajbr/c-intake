@@ -1,4 +1,4 @@
-class TblAliensReferentialIntegrity < ActiveRecord::Migration
+class TblAliensReferentialIntegrity < ActiveRecord::Migration[5.2]
   def change
   	 execute <<-SQL
     	ALTER TABLE aliens

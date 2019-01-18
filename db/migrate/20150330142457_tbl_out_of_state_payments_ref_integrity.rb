@@ -1,4 +1,4 @@
-class TblOutOfStatePaymentsRefIntegrity < ActiveRecord::Migration
+class TblOutOfStatePaymentsRefIntegrity < ActiveRecord::Migration[5.2]
   def change
   	change_column :out_of_state_payments, :client_id, :integer, null:false
   	change_column :out_of_state_payments, :payment_month, :date, null:false

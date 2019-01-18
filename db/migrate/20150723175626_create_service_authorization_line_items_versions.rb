@@ -1,4 +1,4 @@
-class CreateServiceAuthorizationLineItemsVersions < ActiveRecord::Migration
+class CreateServiceAuthorizationLineItemsVersions < ActiveRecord::Migration[5.2]
   def change
     create_table :seriz_auth_line_items_versions do |t|
       t.string   :item_type, :null => false

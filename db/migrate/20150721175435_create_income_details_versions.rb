@@ -1,4 +1,4 @@
-class CreateIncomeDetailsVersions < ActiveRecord::Migration
+class CreateIncomeDetailsVersions < ActiveRecord::Migration[5.2]
   def change
     create_table :income_details_versions do |t|
       t.string   :item_type, :null => false

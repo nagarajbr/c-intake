@@ -1,4 +1,4 @@
-class TblPregnanciesRefIntegrity < ActiveRecord::Migration
+class TblPregnanciesRefIntegrity < ActiveRecord::Migration[5.2]
   def change
   	execute <<-SQL
     	ALTER TABLE pregnancies

@@ -1,4 +1,4 @@
-class CreateProgramUnitTaskOwners < ActiveRecord::Migration
+class CreateProgramUnitTaskOwners < ActiveRecord::Migration[5.2]
   def change
     create_table :program_unit_task_owners do |t|
     	t.integer :program_unit_id, null:false

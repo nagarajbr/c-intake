@@ -1,4 +1,4 @@
-class CreateInStatePayments < ActiveRecord::Migration
+class CreateInStatePayments < ActiveRecord::Migration[5.2]
   def change
     create_table :in_state_payments do |t|
     	t.integer :program_unit_id

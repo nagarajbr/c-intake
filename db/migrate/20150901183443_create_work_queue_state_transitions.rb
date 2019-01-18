@@ -1,4 +1,4 @@
-class CreateWorkQueueStateTransitions < ActiveRecord::Migration
+class CreateWorkQueueStateTransitions < ActiveRecord::Migration[5.2]
   def change
     create_table :work_queue_state_transitions do |t|
       t.references :work_queue, index: true

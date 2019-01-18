@@ -1,4 +1,4 @@
-class EditUserColumns < ActiveRecord::Migration
+class EditUserColumns < ActiveRecord::Migration[5.2]
 
   def up
 	 remove_column :users, :assign_tasks_ind

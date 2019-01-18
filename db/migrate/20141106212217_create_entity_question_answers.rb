@@ -1,4 +1,4 @@
-class CreateEntityQuestionAnswers < ActiveRecord::Migration
+class CreateEntityQuestionAnswers < ActiveRecord::Migration[5.2]
   def change
     create_table :entity_question_answers do |t|
     	t.integer :entity_id, null: false

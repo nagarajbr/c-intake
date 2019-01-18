@@ -1,4 +1,4 @@
-class CreateUsers < ActiveRecord::Migration
+class CreateUsers < ActiveRecord::Migration[5.2]
   def change
     create_table :users do |t|
     	t.string    :login,               :null => false                # optional, you can use email instead, or both

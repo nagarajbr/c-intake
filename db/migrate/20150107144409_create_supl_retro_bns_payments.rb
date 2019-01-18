@@ -1,4 +1,4 @@
-class CreateSuplRetroBnsPayments < ActiveRecord::Migration
+class CreateSuplRetroBnsPayments < ActiveRecord::Migration[5.2]
   def change
     create_table :supl_retro_bns_payments do |t|
        t.references :program_units, index: true

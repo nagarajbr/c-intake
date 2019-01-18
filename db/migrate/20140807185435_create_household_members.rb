@@ -1,4 +1,4 @@
-class CreateHouseholdMembers < ActiveRecord::Migration
+class CreateHouseholdMembers < ActiveRecord::Migration[5.2]
   def change
     create_table :household_members do |t|
       t.references :household, index: true,null:false

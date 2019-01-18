@@ -1,4 +1,4 @@
-class CreateNoticeGenerations < ActiveRecord::Migration
+class CreateNoticeGenerations < ActiveRecord::Migration[5.2]
   def change
     create_table :notice_generations do |t|
      	t.date :notice_generated_date, null:false

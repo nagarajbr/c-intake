@@ -1,4 +1,4 @@
-class CreateSystemParamCategoriesVersions < ActiveRecord::Migration
+class CreateSystemParamCategoriesVersions < ActiveRecord::Migration[5.2]
   def change
     create_table :sys_parm_categories_versions do |t|
     t.string   :item_type, :null => false

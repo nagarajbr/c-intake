@@ -1,4 +1,4 @@
-class CreateSystemParamCategories < ActiveRecord::Migration
+class CreateSystemParamCategories < ActiveRecord::Migration[5.2]
   def change
     create_table :system_param_categories do |t|
 
@@ -9,4 +9,3 @@ class CreateSystemParamCategories < ActiveRecord::Migration
     end
   end
 end
-           

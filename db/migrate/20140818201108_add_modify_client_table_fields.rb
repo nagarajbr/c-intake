@@ -1,4 +1,4 @@
-class AddModifyClientTableFields < ActiveRecord::Migration
+class AddModifyClientTableFields < ActiveRecord::Migration[5.2]
   def up
   	add_column :clients, :ssn_enumeration_type, :integer
   	add_column :clients, :identification_type, :integer

@@ -1,4 +1,4 @@
-class CreateActivityHoursVersions < ActiveRecord::Migration
+class CreateActivityHoursVersions < ActiveRecord::Migration[5.2]
   def change
     create_table :activity_hours_versions do |t|
       t.string   :item_type, :null => false

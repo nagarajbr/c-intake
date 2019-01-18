@@ -1,4 +1,4 @@
-class CreateScreeningIneligibleCodes < ActiveRecord::Migration
+class CreateScreeningIneligibleCodes < ActiveRecord::Migration[5.2]
   def change
     create_table :screening_ineligible_codes do |t|
      	t.integer :application_id, null:false

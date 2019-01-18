@@ -1,4 +1,4 @@
-class CreateHouseholdMemberStepStatuses < ActiveRecord::Migration
+class CreateHouseholdMemberStepStatuses < ActiveRecord::Migration[5.2]
   def change
     create_table :household_member_step_statuses do |t|
     	t.references :client, index: true,null:false

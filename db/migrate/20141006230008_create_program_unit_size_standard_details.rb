@@ -1,4 +1,4 @@
-class CreateProgramUnitSizeStandardDetails < ActiveRecord::Migration
+class CreateProgramUnitSizeStandardDetails < ActiveRecord::Migration[5.2]
   def change
     create_table :program_unit_size_standard_details do |t|
     	t.date :effective_date

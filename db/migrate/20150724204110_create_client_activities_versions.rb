@@ -1,4 +1,4 @@
-class CreateClientActivitiesVersions < ActiveRecord::Migration
+class CreateClientActivitiesVersions < ActiveRecord::Migration[5.2]
   def change
     create_table :client_activities_versions do |t|
     t.string   :item_type, :null => false

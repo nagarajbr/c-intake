@@ -1,4 +1,4 @@
-class TblSuplRetroBnsPaymentsRefIntegrity < ActiveRecord::Migration
+class TblSuplRetroBnsPaymentsRefIntegrity < ActiveRecord::Migration[5.2]
   def change
   	change_column :supl_retro_bns_payments, :program_unit_id, :integer, null:false
   	change_column :supl_retro_bns_payments, :payment_type, :integer, null:false

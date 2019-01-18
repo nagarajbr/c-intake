@@ -1,4 +1,4 @@
-class CreateProviderServiceAreaAvailabilities < ActiveRecord::Migration
+class CreateProviderServiceAreaAvailabilities < ActiveRecord::Migration[5.2]
   def change
     create_table :provider_service_area_availabilities do |t|
     	t.integer :provider_service_area_id, null: false

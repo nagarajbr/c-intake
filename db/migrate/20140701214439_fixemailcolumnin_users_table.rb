@@ -1,4 +1,4 @@
-class FixemailcolumninUsersTable < ActiveRecord::Migration
+class FixemailcolumninUsersTable < ActiveRecord::Migration[5.2]
   def up
   	 rename_column :users, :email, :email_id
   end

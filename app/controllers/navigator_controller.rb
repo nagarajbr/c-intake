@@ -1,5 +1,5 @@
 class NavigatorController < AttopAncestorController
-	before_filter :set_client_application
+	before_action :set_client_application
 
 	def eligible_program_units
 		if session[:APPLICATION_ID].present?

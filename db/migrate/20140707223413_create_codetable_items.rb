@@ -1,4 +1,4 @@
-class CreateCodetableItems < ActiveRecord::Migration
+class CreateCodetableItems < ActiveRecord::Migration[5.2]
   def change
     create_table :codetable_items do |t|
       t.references :code_table, index: true

@@ -1,4 +1,4 @@
-class CreateSanctionDetailsVersions < ActiveRecord::Migration
+class CreateSanctionDetailsVersions < ActiveRecord::Migration[5.2]
   def change
     create_table :sanction_details_versions do |t|
       t.string   :item_type, :null => false

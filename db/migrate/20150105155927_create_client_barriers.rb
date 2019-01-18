@@ -1,4 +1,4 @@
-class CreateClientBarriers < ActiveRecord::Migration
+class CreateClientBarriers < ActiveRecord::Migration[5.2]
   def change
     create_table :client_barriers do |t|
       t.references :client, index: true

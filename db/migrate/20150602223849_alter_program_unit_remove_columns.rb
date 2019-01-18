@@ -1,4 +1,4 @@
-class AlterProgramUnitRemoveColumns < ActiveRecord::Migration
+class AlterProgramUnitRemoveColumns < ActiveRecord::Migration[5.2]
   def change
   		remove_column :program_units, :work_flow_status
   		remove_column :program_units, :approved_by

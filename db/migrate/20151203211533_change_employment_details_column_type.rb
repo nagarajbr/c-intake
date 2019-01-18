@@ -1,4 +1,4 @@
-class ChangeEmploymentDetailsColumnType < ActiveRecord::Migration
+class ChangeEmploymentDetailsColumnType < ActiveRecord::Migration[5.2]
   def up
   	change_column :employment_details, :position_type, :string, null:true
   end

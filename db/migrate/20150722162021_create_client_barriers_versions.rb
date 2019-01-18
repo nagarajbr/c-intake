@@ -1,4 +1,4 @@
-class CreateClientBarriersVersions < ActiveRecord::Migration
+class CreateClientBarriersVersions < ActiveRecord::Migration[5.2]
   def change
     create_table :client_barriers_versions do |t|
     t.string   :item_type, :null => false

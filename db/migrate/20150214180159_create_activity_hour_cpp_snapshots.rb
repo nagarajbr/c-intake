@@ -1,4 +1,4 @@
-class CreateActivityHourCppSnapshots < ActiveRecord::Migration
+class CreateActivityHourCppSnapshots < ActiveRecord::Migration[5.2]
   def change
     create_table :activity_hour_cpp_snapshots do |t|
     	t.integer :career_pathway_plan_id, null:false

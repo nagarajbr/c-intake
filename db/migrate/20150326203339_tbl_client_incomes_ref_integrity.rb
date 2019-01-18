@@ -1,4 +1,4 @@
-class TblClientIncomesRefIntegrity < ActiveRecord::Migration
+class TblClientIncomesRefIntegrity < ActiveRecord::Migration[5.2]
   def change
   		change_column :client_incomes, :client_id, :integer, null:false
   		change_column :client_incomes, :income_id, :integer, null:false

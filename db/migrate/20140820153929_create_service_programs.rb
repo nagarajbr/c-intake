@@ -1,4 +1,4 @@
-class CreateServicePrograms < ActiveRecord::Migration
+class CreateServicePrograms < ActiveRecord::Migration[5.2]
   def change
     create_table :service_programs do |t|
       t.string :description, null: false , limit: 250

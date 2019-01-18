@@ -1,4 +1,4 @@
-class CreatePguActionsVersions < ActiveRecord::Migration
+class CreatePguActionsVersions < ActiveRecord::Migration[5.2]
   def change
     create_table :pgu_actions_versions do |t|
       t.string   :item_type, :null => false

@@ -1,4 +1,4 @@
-class CreateClientImmunizations < ActiveRecord::Migration
+class CreateClientImmunizations < ActiveRecord::Migration[5.2]
   def change
     create_table :client_immunizations do |t|
       t.references :client, index: true,null:false

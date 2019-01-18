@@ -1,4 +1,4 @@
-class CreateProgramWizards < ActiveRecord::Migration
+class CreateProgramWizards < ActiveRecord::Migration[5.2]
   def change
     create_table :program_wizards do |t|
       t.references :program_unit, index: true, null:false

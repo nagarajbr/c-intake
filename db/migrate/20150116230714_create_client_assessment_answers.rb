@@ -1,4 +1,4 @@
-class CreateClientAssessmentAnswers < ActiveRecord::Migration
+class CreateClientAssessmentAnswers < ActiveRecord::Migration[5.2]
   def change
     create_table :client_assessment_answers do |t|
       t.references :client_assessment, index: true, null: false

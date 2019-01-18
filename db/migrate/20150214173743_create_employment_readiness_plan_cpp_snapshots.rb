@@ -1,4 +1,4 @@
-class CreateEmploymentReadinessPlanCppSnapshots < ActiveRecord::Migration
+class CreateEmploymentReadinessPlanCppSnapshots < ActiveRecord::Migration[5.2]
   def change
     create_table :employment_readiness_plan_cpp_snapshots do |t|
     	 t.integer :career_pathway_plan_id, null:false

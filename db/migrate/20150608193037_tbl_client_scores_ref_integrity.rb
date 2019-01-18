@@ -1,4 +1,4 @@
-class TblClientScoresRefIntegrity < ActiveRecord::Migration
+class TblClientScoresRefIntegrity < ActiveRecord::Migration[5.2]
   def change
 	  	execute <<-SQL
 	    	ALTER TABLE client_scores

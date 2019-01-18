@@ -1,4 +1,4 @@
-class CreateCareerPathwayPlans < ActiveRecord::Migration
+class CreateCareerPathwayPlans < ActiveRecord::Migration[5.2]
   def change
     create_table :career_pathway_plans do |t|
  	t.integer :client_assessment_id

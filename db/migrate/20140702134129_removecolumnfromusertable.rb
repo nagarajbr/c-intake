@@ -1,4 +1,4 @@
-class Removecolumnfromusertable < ActiveRecord::Migration
+class Removecolumnfromusertable < ActiveRecord::Migration[5.2]
   def up
   	 remove_column :users, :role_id
   end

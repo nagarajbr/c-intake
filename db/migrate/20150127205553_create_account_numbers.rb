@@ -1,4 +1,4 @@
-class CreateAccountNumbers < ActiveRecord::Migration
+class CreateAccountNumbers < ActiveRecord::Migration[5.2]
   def change
     create_table :account_numbers do |t|
       t.integer :account_number

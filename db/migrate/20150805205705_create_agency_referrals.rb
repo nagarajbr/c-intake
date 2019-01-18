@@ -1,4 +1,4 @@
-class CreateAgencyReferrals < ActiveRecord::Migration
+class CreateAgencyReferrals < ActiveRecord::Migration[5.2]
   def change
     create_table :agency_referrals do |t|
       t.integer :entity_type, null: false

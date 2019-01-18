@@ -1,4 +1,4 @@
-class CreateAlertsVersions < ActiveRecord::Migration
+class CreateAlertsVersions < ActiveRecord::Migration[5.2]
   def change
     create_table :alerts_versions do |t|
       t.string   :item_type, :null => false

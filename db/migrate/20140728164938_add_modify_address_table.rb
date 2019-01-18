@@ -1,4 +1,4 @@
-class AddModifyAddressTable < ActiveRecord::Migration
+class AddModifyAddressTable < ActiveRecord::Migration[5.2]
   def up
   	add_column :addresses, :address_notes, :text
   	change_column :addresses, :address_type, :integer, null:false

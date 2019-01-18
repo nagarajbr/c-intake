@@ -1,4 +1,4 @@
-class CreateClientScores < ActiveRecord::Migration
+class CreateClientScores < ActiveRecord::Migration[5.2]
   def change
     create_table :client_scores do |t|
 

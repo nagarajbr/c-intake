@@ -1,4 +1,4 @@
-class TblIncomeDetailAdjustReasonsRefIntegrity < ActiveRecord::Migration
+class TblIncomeDetailAdjustReasonsRefIntegrity < ActiveRecord::Migration[5.2]
   def change
   	change_column :income_detail_adjust_reasons, :income_detail_id, :integer, null:false
   	change_column :income_detail_adjust_reasons, :adjusted_amount, :decimal, precision: 8, scale: 2, null:false

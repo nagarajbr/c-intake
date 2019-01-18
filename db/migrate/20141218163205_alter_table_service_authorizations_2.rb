@@ -1,4 +1,4 @@
-class AlterTableServiceAuthorizations2 < ActiveRecord::Migration
+class AlterTableServiceAuthorizations2 < ActiveRecord::Migration[5.2]
   def change
   	rename_column :service_authorizations, :activity_id, :activity_service_id
   end

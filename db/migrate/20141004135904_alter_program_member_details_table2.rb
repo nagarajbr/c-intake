@@ -1,4 +1,4 @@
-class AlterProgramMemberDetailsTable2 < ActiveRecord::Migration
+class AlterProgramMemberDetailsTable2 < ActiveRecord::Migration[5.2]
   def up
   	add_column :program_member_details, :inc_exp_res_indicator, :string, limit: 1
 

@@ -1,4 +1,4 @@
-class CreatePreScreenings < ActiveRecord::Migration
+class CreatePreScreenings < ActiveRecord::Migration[5.2]
   def change
     # create_table :pre_screenings do |t|
     # 	 t.integer :client_id

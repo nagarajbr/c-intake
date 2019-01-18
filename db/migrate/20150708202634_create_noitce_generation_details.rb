@@ -1,4 +1,4 @@
-class CreateNoitceGenerationDetails < ActiveRecord::Migration
+class CreateNoitceGenerationDetails < ActiveRecord::Migration[5.2]
   def change
     create_table :notice_generation_details do |t|
     	t.references :notice_generations, index: true, null:false

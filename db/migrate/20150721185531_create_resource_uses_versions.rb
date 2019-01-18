@@ -1,4 +1,4 @@
-class CreateResourceUsesVersions < ActiveRecord::Migration
+class CreateResourceUsesVersions < ActiveRecord::Migration[5.2]
   def change
     create_table :resource_uses_versions do |t|
       t.string   :item_type, :null => false

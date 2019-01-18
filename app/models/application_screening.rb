@@ -1,5 +1,5 @@
 class ApplicationScreening < ActiveRecord::Base
-has_paper_trail :class_name => 'ApplicationScreeningVersion',:on => [:view_screening_summary]
+has_paper_trail :class_name => 'ApplicationScreeningVersion'#,:on => [:view_screening_summary]
   # Author : Manoj Patil
   # Date : 09/27/2014
   #

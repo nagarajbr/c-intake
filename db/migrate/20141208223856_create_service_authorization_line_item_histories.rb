@@ -1,4 +1,4 @@
-class CreateServiceAuthorizationLineItemHistories < ActiveRecord::Migration
+class CreateServiceAuthorizationLineItemHistories < ActiveRecord::Migration[5.2]
   def change
     create_table :service_authorization_line_item_histories do |t|
     	t.integer :service_authorization_id,null: false

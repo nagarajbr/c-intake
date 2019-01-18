@@ -1,4 +1,4 @@
-class CreateAssessmentQuestionMetadata < ActiveRecord::Migration
+class CreateAssessmentQuestionMetadata < ActiveRecord::Migration[5.2]
   def change
     create_table :assessment_question_metadata do |t|
     	t.references :assessment_question, index: true, null: false

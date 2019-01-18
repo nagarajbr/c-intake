@@ -1,4 +1,4 @@
-class CreateProviderInvoiceStateTransitions < ActiveRecord::Migration
+class CreateProviderInvoiceStateTransitions < ActiveRecord::Migration[5.2]
   def change
     create_table :provider_invoice_state_transitions do |t|
       # t.references :provider_invoice, index: true

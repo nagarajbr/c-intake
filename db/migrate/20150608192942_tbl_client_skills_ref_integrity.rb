@@ -1,4 +1,4 @@
-class TblClientSkillsRefIntegrity < ActiveRecord::Migration
+class TblClientSkillsRefIntegrity < ActiveRecord::Migration[5.2]
   def change
 	  	execute <<-SQL
 	    	ALTER TABLE client_skills

@@ -1,4 +1,4 @@
-class CreatePrescreenHouseholds < ActiveRecord::Migration
+class CreatePrescreenHouseholds < ActiveRecord::Migration[5.2]
   def change
     create_table :prescreen_households do |t|
       t.string  :household_name,limit: 35

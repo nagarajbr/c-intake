@@ -28,10 +28,10 @@ has_paper_trail :class_name => 'AddressVersion' ,:on => [:update, :destroy]
     validates :city, length: { maximum: 50 }
     validates_length_of :zip, minimum:5, maximum:5,allow_blank:false, message: " of 5 digits is required."
     validates_length_of :zip_suffix, minimum:4, maximum:4,allow_blank:true, message: " of 4 digits is required."
-    validates_length_of :primary, is:10, if: 'primary.present?', message: " number should be of 10 digits."
-    validates_length_of :secondary, is:10, if: 'secondary.present?', message: " number should be of 10 digits."
-    validates_length_of :other, is:10, if: 'other.present?', message: " number should be of 10 digits."
-    validates :email_address, if: 'email_address.present?', format: { with: /\A\S+@.+\.\S+\z/,
+    validates_length_of :primary, is:10, if: -> {'primary.present?'}, message: " number should be of 10 digits."
+    validates_length_of :secondary, is:10, if: -> {'secondary.present?'}, message: " number should be of 10 digits."
+    validates_length_of :other, is:10, if: -> {'other.present?'}, message: " number should be of 10 digits."
+    validates :email_address, if: -> {'email_address.present?'}, format: { with: /\A\S+@.+\.\S+\z/,
                                      message: " address is required. It must be in the format: username@domain.com."
                                    }
 

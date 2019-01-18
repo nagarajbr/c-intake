@@ -1,4 +1,4 @@
-class RemoveColumnsFromUsers < ActiveRecord::Migration
+class RemoveColumnsFromUsers < ActiveRecord::Migration[5.2]
   def up
   	 remove_column :users, :phone_area_code
 	 remove_column :users, :phone_prefix

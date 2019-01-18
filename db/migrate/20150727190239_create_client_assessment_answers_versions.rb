@@ -1,4 +1,4 @@
-class CreateClientAssessmentAnswersVersions < ActiveRecord::Migration
+class CreateClientAssessmentAnswersVersions < ActiveRecord::Migration[5.2]
   def change
     create_table :clnt_assmnt_answers_versions do |t|
       t.string   :item_type, :null => false

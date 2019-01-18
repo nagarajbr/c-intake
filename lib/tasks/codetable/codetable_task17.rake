@@ -10,9 +10,9 @@ namespace :populate_codetable17 do
 		# Cancel Payment
 		# Return Payment
 		# Duplicate Payment
-		 CodetableItem.create(code_table_id: 113,short_description:"Cancel Payment",long_description:" ",system_defined:"FALSE",active:"TRUE")
-		 CodetableItem.create(code_table_id: 113,short_description:"Return Payment",long_description:" ",system_defined:"FALSE",active:"TRUE")
-		 CodetableItem.create(code_table_id: 113,short_description:"Duplicate Payment",long_description:" ",system_defined:"FALSE",active:"TRUE")
+		 #CodetableItem.create(code_table_id: 113,short_description:"Cancel Payment",long_description:" ",system_defined:"FALSE",active:"TRUE")
+		 #CodetableItem.create(code_table_id: 113,short_description:"Return Payment",long_description:" ",system_defined:"FALSE",active:"TRUE")
+		 #CodetableItem.create(code_table_id: 113,short_description:"Duplicate Payment",long_description:" ",system_defined:"FALSE",active:"TRUE")
 
 end
 

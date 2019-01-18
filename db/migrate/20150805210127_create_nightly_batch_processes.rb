@@ -1,4 +1,4 @@
-class CreateNightlyBatchProcesses < ActiveRecord::Migration
+class CreateNightlyBatchProcesses < ActiveRecord::Migration[5.2]
   def change
     create_table :nightly_batch_processes do |t|
       t.integer :entity_type, null: false

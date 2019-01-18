@@ -1,4 +1,4 @@
-class CreateOutOfStatePayments < ActiveRecord::Migration
+class CreateOutOfStatePayments < ActiveRecord::Migration[5.2]
   def change
     create_table :out_of_state_payments do |t|
     	t.integer :client_id

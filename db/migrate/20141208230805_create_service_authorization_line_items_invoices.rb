@@ -1,4 +1,4 @@
-class CreateServiceAuthorizationLineItemsInvoices < ActiveRecord::Migration
+class CreateServiceAuthorizationLineItemsInvoices < ActiveRecord::Migration[5.2]
   def change
     create_table :service_authorization_line_items_invoices do |t|
     	  t.integer :provider_invoice_id, null: false

@@ -1,4 +1,4 @@
-class AlterNoticeGenerationTable < ActiveRecord::Migration
+class AlterNoticeGenerationTable < ActiveRecord::Migration[5.2]
   def change
   	add_column :notice_generations, :program_unit_id, :integer
   	add_column :notice_generations, :processing_location, :integer

@@ -1,4 +1,4 @@
-class TblDisabilitiesRefIntegrity < ActiveRecord::Migration
+class TblDisabilitiesRefIntegrity < ActiveRecord::Migration[5.2]
   def change
 
   	change_column :disabilities, :disiability_type, :integer, null:false

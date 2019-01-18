@@ -1,4 +1,4 @@
-class AlterTableProviderInvoices < ActiveRecord::Migration
+class AlterTableProviderInvoices < ActiveRecord::Migration[5.2]
   def change
   	rename_column :provider_invoices, :status, :state
   	rename_column :provider_invoices, :status_rejection_reason, :reason

@@ -1,4 +1,4 @@
-class CreateAuditTrailShareds < ActiveRecord::Migration
+class CreateAuditTrailShareds < ActiveRecord::Migration[5.2]
   def change
     create_table :audit_trail_shareds do |t|
       t.references :audit_trail_masters, index: true, null:false

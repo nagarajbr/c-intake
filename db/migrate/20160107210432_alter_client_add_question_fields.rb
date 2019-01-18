@@ -1,4 +1,4 @@
-class AlterClientAddQuestionFields < ActiveRecord::Migration
+class AlterClientAddQuestionFields < ActiveRecord::Migration[5.2]
   def change
   	add_column :clients, :felon_flag, "char(1)"
   	add_column :clients, :rcvd_tea_out_of_state_flag, "char(1)"

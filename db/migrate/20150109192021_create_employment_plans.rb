@@ -1,4 +1,4 @@
-class CreateEmploymentPlans < ActiveRecord::Migration
+class CreateEmploymentPlans < ActiveRecord::Migration[5.2]
   def change
     # create_table :employment_plans do |t|
     #    t.references :action_plans, index: true

@@ -1,4 +1,4 @@
-class TblResourceDetailsRefIntegrity < ActiveRecord::Migration
+class TblResourceDetailsRefIntegrity < ActiveRecord::Migration[5.2]
     def change
 	  	execute <<-SQL
 	    	ALTER TABLE resource_details

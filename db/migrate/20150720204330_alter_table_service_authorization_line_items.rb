@@ -1,4 +1,4 @@
-class AlterTableServiceAuthorizationLineItems < ActiveRecord::Migration
+class AlterTableServiceAuthorizationLineItems < ActiveRecord::Migration[5.2]
   def change
   	remove_column :service_authorization_line_items, :status
   	remove_column :service_authorization_line_items, :requested_by

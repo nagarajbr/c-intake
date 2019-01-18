@@ -1,4 +1,4 @@
-class TblApplicationEligibilityResultsRefIntegrity < ActiveRecord::Migration
+class TblApplicationEligibilityResultsRefIntegrity < ActiveRecord::Migration[5.2]
   def change
   	# 1.
   	 execute <<-SQL

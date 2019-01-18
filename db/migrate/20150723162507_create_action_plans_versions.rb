@@ -1,4 +1,4 @@
-class CreateActionPlansVersions < ActiveRecord::Migration
+class CreateActionPlansVersions < ActiveRecord::Migration[5.2]
   def change
     create_table :action_plans_versions do |t|
       t.string   :item_type, :null => false

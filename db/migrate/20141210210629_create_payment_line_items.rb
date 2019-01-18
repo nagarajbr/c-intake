@@ -1,4 +1,4 @@
-class CreatePaymentLineItems < ActiveRecord::Migration
+class CreatePaymentLineItems < ActiveRecord::Migration[5.2]
   def change
     create_table :payment_line_items do |t|
     	t.integer :line_item_type, null: false

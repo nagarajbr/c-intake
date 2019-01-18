@@ -1,4 +1,4 @@
-class CreateAssessmentStrengthHistories < ActiveRecord::Migration
+class CreateAssessmentStrengthHistories < ActiveRecord::Migration[5.2]
   def change
     create_table :assessment_strength_histories do |t|
     	t.integer :client_assessment_history_id,null:false

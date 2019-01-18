@@ -1,4 +1,4 @@
-class ChangeUserColumn < ActiveRecord::Migration
+class ChangeUserColumn < ActiveRecord::Migration[5.2]
   def self.up
     rename_column :users, :created_by_user_id, :created_by
     rename_column :users, :updated_by_user_id, :updated_by

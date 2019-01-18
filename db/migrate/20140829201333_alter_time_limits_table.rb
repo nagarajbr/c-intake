@@ -1,7 +1,7 @@
-class AlterTimeLimitsTable < ActiveRecord::Migration
+class AlterTimeLimitsTable < ActiveRecord::Migration[5.2]
   def up
   	rename_column :time_limits, :payment_date, :payment_month
-  	
+
    	remove_column :time_limits, :issue_date
    	remove_column :time_limits, :payment_amount
    	remove_column :time_limits, :payment_type

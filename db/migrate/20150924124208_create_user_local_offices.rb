@@ -1,4 +1,4 @@
-class CreateUserLocalOffices < ActiveRecord::Migration
+class CreateUserLocalOffices < ActiveRecord::Migration[5.2]
   def change
     create_table :user_local_offices do |t|
     	t.references :user , null:false

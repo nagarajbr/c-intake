@@ -1,4 +1,4 @@
-class TblProgramBenefitMembersRefIntegrity < ActiveRecord::Migration
+class TblProgramBenefitMembersRefIntegrity < ActiveRecord::Migration[5.2]
   def change
 
   	 change_column :program_benefit_members, :run_id, :integer, null:false

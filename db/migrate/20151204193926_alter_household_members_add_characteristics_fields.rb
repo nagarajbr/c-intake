@@ -1,4 +1,4 @@
-class AlterHouseholdMembersAddCharacteristicsFields < ActiveRecord::Migration
+class AlterHouseholdMembersAddCharacteristicsFields < ActiveRecord::Migration[5.2]
   def change
   	add_column :household_members, :general_health_chalng_to_work_charcteristics_found_add_flag, "char(1)"
   	add_column :household_members, :disability_charcteristics_found_add_flag, "char(1)"

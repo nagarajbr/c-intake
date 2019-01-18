@@ -1,4 +1,4 @@
-class AlterProviderInvoicesWorkFlowFields < ActiveRecord::Migration
+class AlterProviderInvoicesWorkFlowFields < ActiveRecord::Migration[5.2]
   def change
   		add_column :provider_invoices, :requested_by, :integer
 	  	add_column :provider_invoices, :requested_date, :datetime

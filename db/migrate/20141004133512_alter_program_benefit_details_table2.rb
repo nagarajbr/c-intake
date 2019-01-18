@@ -1,4 +1,4 @@
-class AlterProgramBenefitDetailsTable2 < ActiveRecord::Migration
+class AlterProgramBenefitDetailsTable2 < ActiveRecord::Migration[5.2]
   def up
   	add_column :program_benefit_details, :sanction_indicator, :string, limit: 1
   	change_column :program_benefit_details, :eligibility_gross_earned, :decimal, precision: 8, scale: 2

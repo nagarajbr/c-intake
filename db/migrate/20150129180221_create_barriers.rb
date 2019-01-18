@@ -1,4 +1,4 @@
-class CreateBarriers < ActiveRecord::Migration
+class CreateBarriers < ActiveRecord::Migration[5.2]
   def change
     create_table :barriers do |t|
       t.integer :assessment_section_id, null:false

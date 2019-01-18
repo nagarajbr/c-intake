@@ -1,4 +1,4 @@
-class TblInStatePaymentDropConstraint < ActiveRecord::Migration
+class TblInStatePaymentDropConstraint < ActiveRecord::Migration[5.2]
   def change
   	execute <<-SQL
     	ALTER TABLE in_state_payments

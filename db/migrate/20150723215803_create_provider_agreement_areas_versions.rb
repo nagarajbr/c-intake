@@ -1,4 +1,4 @@
-class CreateProviderAgreementAreasVersions < ActiveRecord::Migration
+class CreateProviderAgreementAreasVersions < ActiveRecord::Migration[5.2]
   def change
     create_table :provider_agreement_area_versions do |t|
       t.string   :item_type, :null => false

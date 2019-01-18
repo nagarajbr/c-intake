@@ -1,4 +1,4 @@
-class TblEmploymentsRefIntegrity < ActiveRecord::Migration
+class TblEmploymentsRefIntegrity < ActiveRecord::Migration[5.2]
   def change
   	 execute <<-SQL
     	ALTER TABLE employments

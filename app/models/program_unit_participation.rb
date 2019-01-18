@@ -1,7 +1,7 @@
 class ProgramUnitParticipation < ActiveRecord::Base
 has_paper_trail :class_name => 'ProgramUnitPartcpatnVersion',:on => [:update, :destroy]
 
-    include
+    include AuditModule
     before_create :set_create_user_fields
     before_update :set_update_user_field
 

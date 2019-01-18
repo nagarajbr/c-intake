@@ -24,7 +24,7 @@ default: &default
 development:
   <<: *default
   host: tanf-devdb.state.ar.us
-  database: arwins_tanf_development_demo
+  database: arwins_tanf_development_demo1
   username: arwins_tanf
   password: tanf_arwins
 

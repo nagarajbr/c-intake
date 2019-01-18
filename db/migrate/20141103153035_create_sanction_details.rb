@@ -1,4 +1,4 @@
-class CreateSanctionDetails < ActiveRecord::Migration
+class CreateSanctionDetails < ActiveRecord::Migration[5.2]
   def change
     create_table :sanction_details do |t|
     	t.references :sanction,null: false, index: true

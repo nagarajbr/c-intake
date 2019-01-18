@@ -1,4 +1,4 @@
-class AlterTableProvider2 < ActiveRecord::Migration
+class AlterTableProvider2 < ActiveRecord::Migration[5.2]
   def up
   	remove_column :providers, :provider_physical_address_line1
   	remove_column :providers, :provider_physical_address_line2

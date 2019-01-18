@@ -1,4 +1,4 @@
-class CreateProviderAgreementStateTransitions < ActiveRecord::Migration
+class CreateProviderAgreementStateTransitions < ActiveRecord::Migration[5.2]
   def change
     create_table :provider_agreement_state_transitions do |t|
       # t.references :provider_agreement, index: true

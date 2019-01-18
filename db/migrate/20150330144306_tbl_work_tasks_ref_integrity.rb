@@ -1,4 +1,4 @@
-class TblWorkTasksRefIntegrity < ActiveRecord::Migration
+class TblWorkTasksRefIntegrity < ActiveRecord::Migration[5.2]
   def change
   	 execute <<-SQL
     	ALTER TABLE work_tasks

@@ -1,4 +1,4 @@
-class CreateApplicationServiceProgramsVersions < ActiveRecord::Migration
+class CreateApplicationServiceProgramsVersions < ActiveRecord::Migration[5.2]
   def change
     create_table :app_service_pgm_versions do |t|
       t.string   :item_type, :null => false

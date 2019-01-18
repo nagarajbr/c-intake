@@ -1,4 +1,4 @@
-class CreateEntityPhonesVersions < ActiveRecord::Migration
+class CreateEntityPhonesVersions < ActiveRecord::Migration[5.2]
   def change
     create_table :entity_phones_versions do |t|
       t.string   :item_type, :null => false

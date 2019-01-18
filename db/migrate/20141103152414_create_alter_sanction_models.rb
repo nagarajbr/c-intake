@@ -1,4 +1,4 @@
-class CreateAlterSanctionModels < ActiveRecord::Migration
+class CreateAlterSanctionModels < ActiveRecord::Migration[5.2]
 
 def up
   	remove_column :sanctions, :effective_begin_date

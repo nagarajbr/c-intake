@@ -1,4 +1,4 @@
-class CreateUsersVersions < ActiveRecord::Migration
+class CreateUsersVersions < ActiveRecord::Migration[5.2]
   def change
     create_table :users_versions do |t|
       t.string   :item_type, :null => false

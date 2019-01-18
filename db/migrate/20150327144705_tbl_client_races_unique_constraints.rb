@@ -1,4 +1,4 @@
-class TblClientRacesUniqueConstraints < ActiveRecord::Migration
+class TblClientRacesUniqueConstraints < ActiveRecord::Migration[5.2]
   def change
   	execute <<-SQL
   		ALTER TABLE client_races

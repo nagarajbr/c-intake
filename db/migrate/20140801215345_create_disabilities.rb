@@ -1,4 +1,4 @@
-class CreateDisabilities < ActiveRecord::Migration
+class CreateDisabilities < ActiveRecord::Migration[5.2]
   def change
     create_table :disabilities do |t|
       t.references :client, index: true,null:false

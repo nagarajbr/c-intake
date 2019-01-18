@@ -1,4 +1,4 @@
-class TblProgramUnitParticipationsRefIntegrity < ActiveRecord::Migration
+class TblProgramUnitParticipationsRefIntegrity < ActiveRecord::Migration[5.2]
   	def change
 	  	execute <<-SQL
 	    	ALTER TABLE program_unit_participations

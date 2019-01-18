@@ -1,4 +1,4 @@
-class AlterTableIncomes1 < ActiveRecord::Migration
+class AlterTableIncomes1 < ActiveRecord::Migration[5.2]
   def up
   	add_column :incomes, :position_type, :string
   	add_column :incomes, :employer_id, :integer

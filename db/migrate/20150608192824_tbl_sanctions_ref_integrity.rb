@@ -1,4 +1,4 @@
-class TblSanctionsRefIntegrity < ActiveRecord::Migration
+class TblSanctionsRefIntegrity < ActiveRecord::Migration[5.2]
   def change
 	  	execute <<-SQL
 	    	ALTER TABLE sanctions

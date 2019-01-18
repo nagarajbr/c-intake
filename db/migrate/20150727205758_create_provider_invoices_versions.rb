@@ -1,4 +1,4 @@
-class CreateProviderInvoicesVersions < ActiveRecord::Migration
+class CreateProviderInvoicesVersions < ActiveRecord::Migration[5.2]
   def change
     create_table :provider_invoices_versions do |t|
       t.string   :item_type, :null => false

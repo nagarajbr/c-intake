@@ -1,4 +1,4 @@
-class CreateClientIncomes < ActiveRecord::Migration
+class CreateClientIncomes < ActiveRecord::Migration[5.2]
   def change
     create_table :client_incomes do |t|
       t.references :client

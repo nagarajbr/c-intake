@@ -1,4 +1,4 @@
-class AlterHouseholdMembersAddEducationFlag < ActiveRecord::Migration
+class AlterHouseholdMembersAddEducationFlag < ActiveRecord::Migration[5.2]
   def change
   	add_column :household_members, :education_add_flag, "char(1)"
   	add_column :household_members, :income_add_flag, "char(1)"

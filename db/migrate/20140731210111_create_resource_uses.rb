@@ -1,4 +1,4 @@
-class CreateResourceUses < ActiveRecord::Migration
+class CreateResourceUses < ActiveRecord::Migration[5.2]
   def change
     create_table :resource_uses do |t|
     t.references :resource_details, index: true,null:false

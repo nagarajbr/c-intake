@@ -1,4 +1,4 @@
-class CreateProviderLanguages < ActiveRecord::Migration
+class CreateProviderLanguages < ActiveRecord::Migration[5.2]
   def change
     create_table :provider_languages do |t|
     	t.integer :provider_id

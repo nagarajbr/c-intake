@@ -1,4 +1,4 @@
-class CreateClientDocVerfications < ActiveRecord::Migration
+class CreateClientDocVerfications < ActiveRecord::Migration[5.2]
   def change
     create_table :client_doc_verfications do |t|
         t.references :client, index: true,null:false

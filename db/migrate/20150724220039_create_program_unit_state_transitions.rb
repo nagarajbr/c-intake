@@ -1,4 +1,4 @@
-class CreateProgramUnitStateTransitions < ActiveRecord::Migration
+class CreateProgramUnitStateTransitions < ActiveRecord::Migration[5.2]
   def change
     create_table :program_unit_state_transitions do |t|
       # t.references :program_unit, index: true

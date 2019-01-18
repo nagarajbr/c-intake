@@ -1,4 +1,4 @@
-class CreateSanctions < ActiveRecord::Migration
+class CreateSanctions < ActiveRecord::Migration[5.2]
   def change
     create_table :sanctions do |t|
       t.references :client, index: true, null:false

@@ -1,4 +1,4 @@
-class CreateProgramUnitTaskOwnersVersions < ActiveRecord::Migration
+class CreateProgramUnitTaskOwnersVersions < ActiveRecord::Migration[5.2]
   def change
     create_table :pgu_task_owners_versions do |t|
     	t.string   :item_type, :null => false

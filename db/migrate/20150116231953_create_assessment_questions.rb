@@ -1,4 +1,4 @@
-class CreateAssessmentQuestions < ActiveRecord::Migration
+class CreateAssessmentQuestions < ActiveRecord::Migration[5.2]
   def change
     create_table :assessment_questions do |t|
     	t.references :assessment_sub_section, index: true, null: false

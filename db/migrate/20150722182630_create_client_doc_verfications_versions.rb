@@ -1,4 +1,4 @@
-class CreateClientDocVerficationsVersions < ActiveRecord::Migration
+class CreateClientDocVerficationsVersions < ActiveRecord::Migration[5.2]
   def change
     create_table :client_doc_verfications_versions do |t|
       t.string   :item_type, :null => false

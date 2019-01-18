@@ -1,4 +1,4 @@
-class CreateSystemParams < ActiveRecord::Migration
+class CreateSystemParams < ActiveRecord::Migration[5.2]
   def change
     create_table :system_params do |t|
       t.references :system_param_categories, index: true

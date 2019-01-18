@@ -1,4 +1,4 @@
-class CreateApplicationServicePrograms < ActiveRecord::Migration
+class CreateApplicationServicePrograms < ActiveRecord::Migration[5.2]
   def change
     create_table :application_service_programs do |t|
     		t.references :client_application, index: true, null: false

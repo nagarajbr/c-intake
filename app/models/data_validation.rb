@@ -1,5 +1,5 @@
 class DataValidation < ActiveRecord::Base
-has_paper_trail :class_name => 'DataValidationVersion' ,:on => [:validation_results]
+has_paper_trail :class_name => 'DataValidationVersion' #,:on => [:validation_results]
 
 
 	  belongs_to :client

@@ -1,4 +1,4 @@
-class TblAccountNumbersReferentialIntegrity < ActiveRecord::Migration
+class TblAccountNumbersReferentialIntegrity < ActiveRecord::Migration[5.2]
 	# Manoj 03/24/2015 - referential Integrity,index & not null constraints
   def change
 

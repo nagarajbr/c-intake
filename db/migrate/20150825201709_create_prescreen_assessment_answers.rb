@@ -1,4 +1,4 @@
-class CreatePrescreenAssessmentAnswers < ActiveRecord::Migration
+class CreatePrescreenAssessmentAnswers < ActiveRecord::Migration[5.2]
   def change
     create_table :prescreen_assessment_answers do |t|
     	t.integer :prescreen_household_id, null:false

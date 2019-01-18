@@ -1,4 +1,4 @@
-class AddFieldsToRubyElements < ActiveRecord::Migration
+class AddFieldsToRubyElements < ActiveRecord::Migration[5.2]
   def change
     add_column :ruby_elements, :element_title, "varchar(50)"
     add_column :ruby_elements, :element_type, "char(2)"

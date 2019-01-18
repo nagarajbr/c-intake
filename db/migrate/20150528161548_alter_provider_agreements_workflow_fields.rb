@@ -1,4 +1,4 @@
-class AlterProviderAgreementsWorkflowFields < ActiveRecord::Migration
+class AlterProviderAgreementsWorkflowFields < ActiveRecord::Migration[5.2]
   def change
   	add_column :provider_agreements, :requested_by, :integer
   	add_column :provider_agreements, :requested_date, :datetime

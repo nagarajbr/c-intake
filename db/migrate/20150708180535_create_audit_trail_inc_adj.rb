@@ -1,4 +1,4 @@
-class CreateAuditTrailIncAdj < ActiveRecord::Migration
+class CreateAuditTrailIncAdj < ActiveRecord::Migration[5.2]
   def change
     create_table :audit_trail_inc_adjs,:id => false do |t|
       t.integer :id

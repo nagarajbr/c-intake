@@ -1,4 +1,4 @@
-class CreateResourceAdjustments < ActiveRecord::Migration
+class CreateResourceAdjustments < ActiveRecord::Migration[5.2]
   def change
     create_table :resource_adjustments do |t|
       t.references :resource_detail

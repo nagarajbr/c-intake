@@ -1,4 +1,4 @@
-class CreateWorkQueueLocalOfficeSubscriptions < ActiveRecord::Migration
+class CreateWorkQueueLocalOfficeSubscriptions < ActiveRecord::Migration[5.2]
   def change
     create_table :work_queue_local_office_subscriptions do |t|
     		t.integer :local_office_id , null:false

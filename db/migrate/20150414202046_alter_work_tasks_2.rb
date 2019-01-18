@@ -1,4 +1,4 @@
-class AlterWorkTasks2 < ActiveRecord::Migration
+class AlterWorkTasks2 < ActiveRecord::Migration[5.2]
   def change
   	 add_column :work_tasks, :assigned_by_user_id, :integer
   	 add_column :work_tasks, :assigned_to_type, :integer

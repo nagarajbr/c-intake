@@ -1,4 +1,4 @@
-class CreateOutOfStatePaymentsVersions < ActiveRecord::Migration
+class CreateOutOfStatePaymentsVersions < ActiveRecord::Migration[5.2]
   def change
     create_table :outofstate_payments_versions do |t|
       t.string   :item_type, :null => false

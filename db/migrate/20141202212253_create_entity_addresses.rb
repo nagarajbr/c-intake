@@ -1,4 +1,4 @@
-class CreateEntityAddresses < ActiveRecord::Migration
+class CreateEntityAddresses < ActiveRecord::Migration[5.2]
   def change
     create_table :entity_addresses do |t|
        t.integer :entity_type, null: false

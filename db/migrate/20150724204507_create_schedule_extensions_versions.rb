@@ -1,4 +1,4 @@
-class CreateScheduleExtensionsVersions < ActiveRecord::Migration
+class CreateScheduleExtensionsVersions < ActiveRecord::Migration[5.2]
   def change
     create_table :schedule_extensions_versions do |t|
       t.string   :item_type, :null => false

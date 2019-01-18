@@ -1,4 +1,4 @@
-class CreateClientAssessmentAnswerHistories < ActiveRecord::Migration
+class CreateClientAssessmentAnswerHistories < ActiveRecord::Migration[5.2]
   def change
     create_table :client_assessment_answer_histories do |t|
     	t.integer :client_assessment_history_id,null:false

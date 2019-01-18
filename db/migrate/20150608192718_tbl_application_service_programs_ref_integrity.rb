@@ -1,4 +1,4 @@
-class TblApplicationServiceProgramsRefIntegrity < ActiveRecord::Migration
+class TblApplicationServiceProgramsRefIntegrity < ActiveRecord::Migration[5.2]
   def change
 	  	execute <<-SQL
 	    	ALTER TABLE application_service_programs

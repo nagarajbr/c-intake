@@ -1,5 +1,5 @@
 class ProviderServiceAreaAvailability < ActiveRecord::Base
-has_paper_trail :class_name => 'ProviderAreaAvailVersion',:on => [ :delete,:update]
+has_paper_trail :class_name => 'ProviderAreaAvailVersion',:on => [ :destroy,:update]
 
 
 

@@ -1,4 +1,4 @@
-class CreateProgramBenefitDetailsVersions < ActiveRecord::Migration
+class CreateProgramBenefitDetailsVersions < ActiveRecord::Migration[5.2]
   def change
     create_table :program_benft_detl_versions do |t|
       t.string   :item_type, :null => false

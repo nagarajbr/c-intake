@@ -1,4 +1,4 @@
-class CreatePotentialIntakeClients < ActiveRecord::Migration
+class CreatePotentialIntakeClients < ActiveRecord::Migration[5.2]
   def change
     create_table :potential_intake_clients do |t|
       t.string  :first_name, null: false , limit: 35

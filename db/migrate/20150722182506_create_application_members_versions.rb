@@ -1,4 +1,4 @@
-class CreateApplicationMembersVersions < ActiveRecord::Migration
+class CreateApplicationMembersVersions < ActiveRecord::Migration[5.2]
   def change
     create_table :application_members_versions do |t|
       t.string   :item_type, :null => false

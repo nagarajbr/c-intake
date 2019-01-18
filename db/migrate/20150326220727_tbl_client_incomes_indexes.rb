@@ -1,4 +1,4 @@
-class TblClientIncomesIndexes < ActiveRecord::Migration
+class TblClientIncomesIndexes < ActiveRecord::Migration[5.2]
   def change
   	  execute <<-SQL
       	CREATE INDEX index_cl_incomes_on_client_id

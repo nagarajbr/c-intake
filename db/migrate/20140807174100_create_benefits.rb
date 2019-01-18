@@ -1,4 +1,4 @@
-class CreateBenefits < ActiveRecord::Migration
+class CreateBenefits < ActiveRecord::Migration[5.2]
   def change
     create_table :benefits do |t|
       t.references :budget_unit, index: true,null:false

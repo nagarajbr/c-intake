@@ -116,3 +116,5 @@ gem 'state_machines-graphviz' , '0.0.2'
  gem "jquery-ui-rails"
  gem "wicked"
  gem 'quilljs-rails'
+
+ gem 'seed_dump'

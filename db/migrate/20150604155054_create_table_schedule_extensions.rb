@@ -1,4 +1,4 @@
-class CreateTableScheduleExtensions < ActiveRecord::Migration
+class CreateTableScheduleExtensions < ActiveRecord::Migration[5.2]
   def change
     create_table :schedule_extensions do |t|
     	t.references :schedule, index: true, null: false

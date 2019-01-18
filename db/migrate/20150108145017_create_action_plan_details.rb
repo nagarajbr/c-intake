@@ -1,4 +1,4 @@
-class CreateActionPlanDetails < ActiveRecord::Migration
+class CreateActionPlanDetails < ActiveRecord::Migration[5.2]
   def change
     create_table :action_plan_details do |t|
       t.references :action_plan, index: true, null:false

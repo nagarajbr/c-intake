@@ -1,4 +1,4 @@
-class CreateWorkTasks < ActiveRecord::Migration
+class CreateWorkTasks < ActiveRecord::Migration[5.2]
   def change
     create_table :work_tasks do |t|
     	t.integer :assigned_to, null: false

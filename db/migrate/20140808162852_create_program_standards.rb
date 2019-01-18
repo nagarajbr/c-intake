@@ -1,4 +1,4 @@
-class CreateProgramStandards < ActiveRecord::Migration
+class CreateProgramStandards < ActiveRecord::Migration[5.2]
   def change
     create_table :program_standards do |t|
       t.text      :program_standard_name,limit:25

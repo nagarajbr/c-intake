@@ -1,4 +1,4 @@
-class CreateActivityHours < ActiveRecord::Migration
+class CreateActivityHours < ActiveRecord::Migration[5.2]
   def change
     create_table :activity_hours do |t|
       t.references :action_plan_detail, index: true

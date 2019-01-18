@@ -1,4 +1,4 @@
-class AlterProgramMonthSummariesTable4 < ActiveRecord::Migration
+class AlterProgramMonthSummariesTable4 < ActiveRecord::Migration[5.2]
   def up
   		change_column :program_month_summaries, :tot_earned_inc, :decimal, precision: 8, scale: 2
   		change_column :program_month_summaries, :tot_unearned_inc, :decimal, precision: 8, scale: 2

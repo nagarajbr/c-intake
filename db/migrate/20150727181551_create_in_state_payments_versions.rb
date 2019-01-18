@@ -1,4 +1,4 @@
-class CreateInStatePaymentsVersions < ActiveRecord::Migration
+class CreateInStatePaymentsVersions < ActiveRecord::Migration[5.2]
   def change
     create_table :instate_payment_versions do |t|
    t.string   :item_type, :null => false

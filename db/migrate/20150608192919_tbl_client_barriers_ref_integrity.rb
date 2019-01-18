@@ -1,4 +1,4 @@
-class TblClientBarriersRefIntegrity < ActiveRecord::Migration
+class TblClientBarriersRefIntegrity < ActiveRecord::Migration[5.2]
   def change
 	  	execute <<-SQL
 	    	ALTER TABLE client_barriers

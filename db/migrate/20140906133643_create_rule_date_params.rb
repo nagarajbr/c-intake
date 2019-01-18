@@ -1,4 +1,4 @@
-class CreateRuleDateParams < ActiveRecord::Migration
+class CreateRuleDateParams < ActiveRecord::Migration[5.2]
   def change
     create_table :rule_date_params do |t|
     	t.integer :code_table_id

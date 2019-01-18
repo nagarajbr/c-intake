@@ -1,4 +1,4 @@
-class CreatePrescreenHouseholdResults < ActiveRecord::Migration
+class CreatePrescreenHouseholdResults < ActiveRecord::Migration[5.2]
   def change
     create_table :prescreen_household_results do |t|
     	t.references :prescreen_household,null: false, index: true

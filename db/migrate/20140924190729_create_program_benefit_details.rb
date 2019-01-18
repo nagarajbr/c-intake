@@ -1,4 +1,4 @@
-class CreateProgramBenefitDetails < ActiveRecord::Migration
+class CreateProgramBenefitDetails < ActiveRecord::Migration[5.2]
   def change
     create_table :program_benefit_details do |t|
       	t.integer  :run_id

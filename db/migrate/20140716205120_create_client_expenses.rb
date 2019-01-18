@@ -1,4 +1,4 @@
-class CreateClientExpenses < ActiveRecord::Migration
+class CreateClientExpenses < ActiveRecord::Migration[5.2]
   def change
     create_table :client_expenses do |t|
       t.references :client, index: true

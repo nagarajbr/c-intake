@@ -1,4 +1,4 @@
-class CreateEmploymentDetails < ActiveRecord::Migration
+class CreateEmploymentDetails < ActiveRecord::Migration[5.2]
   def change
     create_table :employment_details do |t|
       t.references :employment, index: true

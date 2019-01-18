@@ -1,4 +1,4 @@
-class CreateEntityAddressesVersions < ActiveRecord::Migration
+class CreateEntityAddressesVersions < ActiveRecord::Migration[5.2]
   def change
     create_table :entity_addresses_versions do |t|
       t.string   :item_type, :null => false

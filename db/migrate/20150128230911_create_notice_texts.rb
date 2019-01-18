@@ -1,4 +1,4 @@
-class CreateNoticeTexts < ActiveRecord::Migration
+class CreateNoticeTexts < ActiveRecord::Migration[5.2]
   def change
     create_table :notice_texts do |t|
       t.references :service_program, index: true, null: false

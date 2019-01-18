@@ -1,4 +1,4 @@
-class AlterTableProviderColumns < ActiveRecord::Migration
+class AlterTableProviderColumns < ActiveRecord::Migration[5.2]
    def up
   	change_column :providers, :provider_name,:string,limit: 50
   	change_column :providers, :contact_person,:string,limit: 50

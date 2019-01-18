@@ -1,4 +1,4 @@
-class CreateEligibilityDetermineResults < ActiveRecord::Migration
+class CreateEligibilityDetermineResults < ActiveRecord::Migration[5.2]
   def change
     create_table :eligibility_determine_results do |t|
     	t.integer :run_id,null:false

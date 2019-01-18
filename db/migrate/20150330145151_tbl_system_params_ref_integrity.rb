@@ -1,4 +1,4 @@
-class TblSystemParamsRefIntegrity < ActiveRecord::Migration
+class TblSystemParamsRefIntegrity < ActiveRecord::Migration[5.2]
   def change
   	change_column :system_params, :system_param_categories_id, :integer, null:false
   	 execute <<-SQL

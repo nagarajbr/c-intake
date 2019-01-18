@@ -1,4 +1,4 @@
-class CreateClientRelationshipVersions < ActiveRecord::Migration
+class CreateClientRelationshipVersions < ActiveRecord::Migration[5.2]
   def change
     create_table :client_relationship_versions do |t|
       t.string   :item_type, :null => false

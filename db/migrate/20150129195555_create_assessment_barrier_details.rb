@@ -1,4 +1,4 @@
-class CreateAssessmentBarrierDetails < ActiveRecord::Migration
+class CreateAssessmentBarrierDetails < ActiveRecord::Migration[5.2]
   def change
     create_table :assessment_barrier_details do |t|
       t.references :assessment_barrier, index: true

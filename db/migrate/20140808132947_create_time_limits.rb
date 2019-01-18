@@ -1,4 +1,4 @@
-class CreateTimeLimits < ActiveRecord::Migration
+class CreateTimeLimits < ActiveRecord::Migration[5.2]
   def change
     create_table :time_limits do |t|
       t.references :client, index: true,null:false

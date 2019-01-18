@@ -1,4 +1,4 @@
-class TblClientParentalRspabilitiesRefIntegrity < ActiveRecord::Migration
+class TblClientParentalRspabilitiesRefIntegrity < ActiveRecord::Migration[5.2]
   def change
   	 execute <<-SQL
     	ALTER TABLE client_parental_rspabilities

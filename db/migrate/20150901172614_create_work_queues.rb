@@ -1,4 +1,4 @@
-class CreateWorkQueues < ActiveRecord::Migration
+class CreateWorkQueues < ActiveRecord::Migration[5.2]
   def change
     create_table :work_queues do |t|
     	t.integer :state , null:false

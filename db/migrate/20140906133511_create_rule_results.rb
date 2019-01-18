@@ -1,4 +1,4 @@
-class CreateRuleResults < ActiveRecord::Migration
+class CreateRuleResults < ActiveRecord::Migration[5.2]
   def change
     create_table :rule_results do |t|
     	 t.references :rule, index: true,null:false

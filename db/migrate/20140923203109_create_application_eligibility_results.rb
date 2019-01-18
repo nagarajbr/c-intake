@@ -1,4 +1,4 @@
-class CreateApplicationEligibilityResults < ActiveRecord::Migration
+class CreateApplicationEligibilityResults < ActiveRecord::Migration[5.2]
   def change
     create_table :application_eligibility_results do |t|
     	t.integer :application_id,null:false

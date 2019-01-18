@@ -1,4 +1,4 @@
-class TblAccountNumbersUniqueConstraint < ActiveRecord::Migration
+class TblAccountNumbersUniqueConstraint < ActiveRecord::Migration[5.2]
   def change
   	 execute <<-SQL
   		ALTER TABLE account_numbers

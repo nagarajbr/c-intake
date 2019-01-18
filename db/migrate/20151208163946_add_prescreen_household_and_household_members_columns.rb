@@ -1,4 +1,4 @@
-class AddPrescreenHouseholdAndHouseholdMembersColumns < ActiveRecord::Migration
+class AddPrescreenHouseholdAndHouseholdMembersColumns < ActiveRecord::Migration[5.2]
   def change
   	add_column :prescreen_households, :ui_benefit_amount, :decimal, precision: 8, scale: 2
   	add_column :prescreen_household_members, :pregnancy_flag, :string, limit: 1

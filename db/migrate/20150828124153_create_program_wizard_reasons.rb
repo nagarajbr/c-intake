@@ -1,4 +1,4 @@
-class CreateProgramWizardReasons < ActiveRecord::Migration
+class CreateProgramWizardReasons < ActiveRecord::Migration[5.2]
   def change
     create_table :program_wizard_reasons do |t|
     	t.references :program_wizards, null:false

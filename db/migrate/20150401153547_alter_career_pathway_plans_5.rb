@@ -1,4 +1,4 @@
-class AlterCareerPathwayPlans5 < ActiveRecord::Migration
+class AlterCareerPathwayPlans5 < ActiveRecord::Migration[5.2]
   def change
   	add_column :career_pathway_plans, :core_hours, :integer
     add_column :career_pathway_plans, :non_core_hours, :integer

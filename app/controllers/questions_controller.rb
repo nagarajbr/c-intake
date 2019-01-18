@@ -1,4 +1,4 @@
-class QuestionsController  < AttopClientAncestorController
+class QuestionsController  < AttopAncestorController
 include Wicked::Wizard
 before_action :capture_answers, on: [:show, :update]
 

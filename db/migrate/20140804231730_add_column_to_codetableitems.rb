@@ -1,4 +1,4 @@
-class AddColumnToCodetableitems < ActiveRecord::Migration
+class AddColumnToCodetableitems < ActiveRecord::Migration[5.2]
   def up
   	 add_column :codetable_items, :parent_id, :integer
   	  add_column :codetable_items, :parent_type, :string

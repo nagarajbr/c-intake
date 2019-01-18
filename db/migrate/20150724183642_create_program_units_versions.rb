@@ -1,4 +1,4 @@
-class CreateProgramUnitsVersions < ActiveRecord::Migration
+class CreateProgramUnitsVersions < ActiveRecord::Migration[5.2]
   def change
     create_table :program_units_versions do |t|
       t.string   :item_type, :null => false

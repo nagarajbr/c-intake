@@ -1,4 +1,4 @@
-class CreateAttopErrorLogs < ActiveRecord::Migration
+class CreateAttopErrorLogs < ActiveRecord::Migration[5.2]
   def change
     create_table :attop_error_logs do |t|
     	t.string :object_name

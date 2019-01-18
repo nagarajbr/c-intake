@@ -1,4 +1,4 @@
-class CreateServiceAuthorizationLineItemStateTransitions < ActiveRecord::Migration
+class CreateServiceAuthorizationLineItemStateTransitions < ActiveRecord::Migration[5.2]
   def change
     create_table :service_authorization_line_item_state_transitions do |t|
       # t.references :service_authorization_line_item, index: true

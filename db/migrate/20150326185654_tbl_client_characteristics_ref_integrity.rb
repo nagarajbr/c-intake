@@ -1,4 +1,4 @@
-class TblClientCharacteristicsRefIntegrity < ActiveRecord::Migration
+class TblClientCharacteristicsRefIntegrity < ActiveRecord::Migration[5.2]
   def change
 
   	change_column :client_characteristics, :characteristic_id, :integer, null:false

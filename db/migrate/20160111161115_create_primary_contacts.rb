@@ -1,4 +1,4 @@
-class CreatePrimaryContacts < ActiveRecord::Migration
+class CreatePrimaryContacts < ActiveRecord::Migration[5.2]
   def change
     create_table :primary_contacts do |t|
     	t.integer :entity_id , null:false

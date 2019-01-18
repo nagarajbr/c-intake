@@ -1,4 +1,4 @@
-class AlterTableProviderServiceAreas < ActiveRecord::Migration
+class AlterTableProviderServiceAreas < ActiveRecord::Migration[5.2]
   def up
   	add_column :provider_service_areas, :served_county, :integer
   	change_column :provider_service_areas, :area_zip,:string, null:true

@@ -1,4 +1,4 @@
-class CreateProgramBenefitMembers < ActiveRecord::Migration
+class CreateProgramBenefitMembers < ActiveRecord::Migration[5.2]
   def change
     create_table :program_benefit_members do |t|
       t.references :program_wizard, index: true, null:false

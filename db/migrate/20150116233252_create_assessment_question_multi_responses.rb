@@ -1,4 +1,4 @@
-class CreateAssessmentQuestionMultiResponses < ActiveRecord::Migration
+class CreateAssessmentQuestionMultiResponses < ActiveRecord::Migration[5.2]
   def change
     create_table :assessment_question_multi_responses do |t|
     	t.integer :assessment_question_id

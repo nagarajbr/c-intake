@@ -1,4 +1,4 @@
-class ClientSsnUnique < ActiveRecord::Migration
+class ClientSsnUnique < ActiveRecord::Migration[5.2]
   def change
   	 execute <<-SQL
   		ALTER TABLE clients

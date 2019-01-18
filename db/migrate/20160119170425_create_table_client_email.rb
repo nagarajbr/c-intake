@@ -1,4 +1,4 @@
-class CreateTableClientEmail < ActiveRecord::Migration
+class CreateTableClientEmail < ActiveRecord::Migration[5.2]
   def change
     create_table :client_emails do |t|
     	t.references :client, index: true

@@ -1,4 +1,4 @@
-class CreateAccessRights < ActiveRecord::Migration
+class CreateAccessRights < ActiveRecord::Migration[5.2]
   def change
     create_table :access_rights do |t|
       t.references :role, index: true

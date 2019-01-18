@@ -1,4 +1,4 @@
-class TblClientRelationshipsRefIntegrity < ActiveRecord::Migration
+class TblClientRelationshipsRefIntegrity < ActiveRecord::Migration[5.2]
   def change
 
   	 execute <<-SQL

@@ -1,4 +1,4 @@
-class CreateProviderAppUsers < ActiveRecord::Migration
+class CreateProviderAppUsers < ActiveRecord::Migration[5.2]
   def change
     create_table :provider_app_users do |t|
     	t.string    :name , lenght:50

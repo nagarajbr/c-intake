@@ -1,4 +1,4 @@
-class PseudoSsnSequence < ActiveRecord::Migration
+class PseudoSsnSequence < ActiveRecord::Migration[5.2]
 
 
  def up

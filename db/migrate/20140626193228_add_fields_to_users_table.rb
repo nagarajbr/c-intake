@@ -1,4 +1,4 @@
-class AddFieldsToUsersTable < ActiveRecord::Migration
+class AddFieldsToUsersTable < ActiveRecord::Migration[5.2]
   def change
     add_column :users, :name, "varchar(50)"
     add_reference :users, :role, index: true

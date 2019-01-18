@@ -1,4 +1,4 @@
-class CreateEmploymentDetailsVersions < ActiveRecord::Migration
+class CreateEmploymentDetailsVersions < ActiveRecord::Migration[5.2]
   def change
     create_table :employment_details_versions do |t|
     t.string   :item_type, :null => false

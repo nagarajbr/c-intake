@@ -1,4 +1,4 @@
-class AlterProvidersTable1 < ActiveRecord::Migration
+class AlterProvidersTable1 < ActiveRecord::Migration[5.2]
   def change
   	change_column :providers, :provider_physical_address_line1, :string, null:true
   	change_column :providers, :provider_physical_city, :string, null:true

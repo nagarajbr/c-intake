@@ -1,4 +1,4 @@
-class TblIncomeDetailsRefIntegrity < ActiveRecord::Migration
+class TblIncomeDetailsRefIntegrity < ActiveRecord::Migration[5.2]
   def change
   	change_column :income_details, :income_id, :integer, null:false
   	change_column :income_details, :check_type, :integer, null:false

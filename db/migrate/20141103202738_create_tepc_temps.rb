@@ -1,4 +1,4 @@
-class CreateTepcTemps < ActiveRecord::Migration
+class CreateTepcTemps < ActiveRecord::Migration[5.2]
   def change
     create_table :tepc_temp do |t|
    t.string :ssn, limit: 9

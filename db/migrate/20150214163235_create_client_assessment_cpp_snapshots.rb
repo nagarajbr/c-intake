@@ -1,4 +1,4 @@
-class CreateClientAssessmentCppSnapshots < ActiveRecord::Migration
+class CreateClientAssessmentCppSnapshots < ActiveRecord::Migration[5.2]
   def change
     create_table :client_assessment_cpp_snapshots do |t|
       t.references :career_pathway_plan, index: true, null:false

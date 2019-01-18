@@ -1,4 +1,4 @@
-class CreateCareerPathwayPlanStateTransitions < ActiveRecord::Migration
+class CreateCareerPathwayPlanStateTransitions < ActiveRecord::Migration[5.2]
   def change
     create_table :career_pathway_plan_state_transitions do |t|
       # t.references :career_pathway_plan, index: true

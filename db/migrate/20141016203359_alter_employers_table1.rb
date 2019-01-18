@@ -1,4 +1,4 @@
-class AlterEmployersTable1 < ActiveRecord::Migration
+class AlterEmployersTable1 < ActiveRecord::Migration[5.2]
   def change
   	change_column :employers, :federal_ein, :integer, null:true
   	change_column :employers, :employer_name, :string, null:true

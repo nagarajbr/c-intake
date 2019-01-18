@@ -1,4 +1,4 @@
-class AlterPrescreenHouseholdMembersTable3 < ActiveRecord::Migration
+class AlterPrescreenHouseholdMembersTable3 < ActiveRecord::Migration[5.2]
   def up
   		add_column :prescreen_household_members, :middle_name, :string, limit: 35
   		add_column :prescreen_household_members, :suffix, :string, limit: 4

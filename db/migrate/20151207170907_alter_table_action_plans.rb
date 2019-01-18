@@ -1,4 +1,4 @@
-class AlterTableActionPlans < ActiveRecord::Migration
+class AlterTableActionPlans < ActiveRecord::Migration[5.2]
   def up
   	add_column :action_plans, :short_term_goal, :string
   	add_column :action_plans, :long_term_goal, :string

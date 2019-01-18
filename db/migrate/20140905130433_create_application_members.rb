@@ -1,4 +1,4 @@
-class CreateApplicationMembers < ActiveRecord::Migration
+class CreateApplicationMembers < ActiveRecord::Migration[5.2]
   def change
     create_table :application_members do |t|
     	t.references :client_application, index: true, null: false

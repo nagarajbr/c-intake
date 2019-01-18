@@ -1,4 +1,4 @@
-class CreateChangeHouseholdAddressProcesses < ActiveRecord::Migration
+class CreateChangeHouseholdAddressProcesses < ActiveRecord::Migration[5.2]
   	def change
 	    create_table :change_household_address_processes do |t|
 		    t.integer :household_id

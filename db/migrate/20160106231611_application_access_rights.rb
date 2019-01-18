@@ -1,4 +1,4 @@
-class ApplicationAccessRights < ActiveRecord::Migration
+class ApplicationAccessRights < ActiveRecord::Migration[5.2]
   def change
     create_table :application_access_rights do |t|
       t.integer :application_id

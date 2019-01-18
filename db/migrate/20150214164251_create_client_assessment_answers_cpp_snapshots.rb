@@ -1,4 +1,4 @@
-class CreateClientAssessmentAnswersCppSnapshots < ActiveRecord::Migration
+class CreateClientAssessmentAnswersCppSnapshots < ActiveRecord::Migration[5.2]
   def change
     create_table :client_assessment_answers_cpp_snapshots do |t|
     	 t.integer :career_pathway_plan_id, null:false

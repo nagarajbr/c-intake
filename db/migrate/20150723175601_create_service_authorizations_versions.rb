@@ -1,4 +1,4 @@
-class CreateServiceAuthorizationsVersions < ActiveRecord::Migration
+class CreateServiceAuthorizationsVersions < ActiveRecord::Migration[5.2]
   def change
     create_table :service_authorizations_versions do |t|
       t.string   :item_type, :null => false

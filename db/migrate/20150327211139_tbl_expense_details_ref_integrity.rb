@@ -1,4 +1,4 @@
-class TblExpenseDetailsRefIntegrity < ActiveRecord::Migration
+class TblExpenseDetailsRefIntegrity < ActiveRecord::Migration[5.2]
   def change
 
   	change_column :expense_details, :expense_id, :integer, null:false

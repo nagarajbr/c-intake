@@ -1,4 +1,4 @@
-class CreateAssessmentBarrierRecommendations < ActiveRecord::Migration
+class CreateAssessmentBarrierRecommendations < ActiveRecord::Migration[5.2]
   def change
     create_table :assessment_barrier_recommendations do |t|
       t.integer :client_assessment_id, null:false

@@ -1,4 +1,4 @@
-class CreateProgramStandardDetails < ActiveRecord::Migration
+class CreateProgramStandardDetails < ActiveRecord::Migration[5.2]
   def change
     create_table :program_standard_details do |t|
       t.references :program_standard, index: true, null:false

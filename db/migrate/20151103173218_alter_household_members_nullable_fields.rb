@@ -1,4 +1,4 @@
-class AlterHouseholdMembersNullableFields < ActiveRecord::Migration
+class AlterHouseholdMembersNullableFields < ActiveRecord::Migration[5.2]
   def change
   	change_column :household_members, :household_member_role, :integer, null:true
   	change_column :household_members, :household_participation_status, :integer, null:true

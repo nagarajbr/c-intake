@@ -1,4 +1,4 @@
-class CreateTimeLimitsVersions < ActiveRecord::Migration
+class CreateTimeLimitsVersions < ActiveRecord::Migration[5.2]
   def change
     create_table :time_limits_versions do |t|
       t.string   :item_type, :null => false

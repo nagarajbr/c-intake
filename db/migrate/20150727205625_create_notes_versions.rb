@@ -1,4 +1,4 @@
-class CreateNotesVersions < ActiveRecord::Migration
+class CreateNotesVersions < ActiveRecord::Migration[5.2]
   def change
     create_table :notes_versions do |t|
       t.string   :item_type, :null => false

@@ -1,4 +1,4 @@
-class CreateScreeningEngines < ActiveRecord::Migration
+class CreateScreeningEngines < ActiveRecord::Migration[5.2]
   def change
     create_table :screening_engines do |t|
       t.references :rule, index: true,null:false

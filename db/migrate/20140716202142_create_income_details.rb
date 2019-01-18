@@ -1,4 +1,4 @@
-class CreateIncomeDetails < ActiveRecord::Migration
+class CreateIncomeDetails < ActiveRecord::Migration[5.2]
   def change
     create_table :income_details do |t|
       t.references :income, index: true

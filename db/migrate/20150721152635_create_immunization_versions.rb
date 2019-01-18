@@ -1,4 +1,4 @@
-class CreateImmunizationVersions < ActiveRecord::Migration
+class CreateImmunizationVersions < ActiveRecord::Migration[5.2]
   def change
     create_table :client_immunization_versions do |t|
       t.string   :item_type, :null => false

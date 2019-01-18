@@ -1,7 +1,7 @@
-class CreateClientApplications < ActiveRecord::Migration
+class CreateClientApplications < ActiveRecord::Migration[5.2]
   def change
     create_table :client_applications do |t|
-		
+
     	t.date :application_date, null: false
 		t.integer :application_status, null: false
 		t.integer :application_disposition_status

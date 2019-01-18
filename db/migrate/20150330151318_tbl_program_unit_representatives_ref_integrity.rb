@@ -1,4 +1,4 @@
-class TblProgramUnitRepresentativesRefIntegrity < ActiveRecord::Migration
+class TblProgramUnitRepresentativesRefIntegrity < ActiveRecord::Migration[5.2]
   def change
   		change_column :program_unit_representatives, :representative_type, :integer, null:false
 

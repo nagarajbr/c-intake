@@ -1,4 +1,4 @@
-class CreateWadcTemps < ActiveRecord::Migration
+class CreateWadcTemps < ActiveRecord::Migration[5.2]
   def change
     create_table :wadc_temps do |t|
    t.string :case_no, limit: 7

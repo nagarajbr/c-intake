@@ -1,4 +1,4 @@
-class CreateAssessmentStrengths < ActiveRecord::Migration
+class CreateAssessmentStrengths < ActiveRecord::Migration[5.2]
   def change
     create_table :assessment_strengths do |t|
       t.references :client_assessment, index: true

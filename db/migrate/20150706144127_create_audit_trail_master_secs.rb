@@ -1,4 +1,4 @@
-class CreateAuditTrailMasterSecs < ActiveRecord::Migration
+class CreateAuditTrailMasterSecs < ActiveRecord::Migration[5.2]
   def change
     create_table :audit_trail_master_secs do |t|
       t.integer :run_id, null: false

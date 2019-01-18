@@ -1,4 +1,4 @@
-class CreateRuleAdjustments < ActiveRecord::Migration
+class CreateRuleAdjustments < ActiveRecord::Migration[5.2]
   def change
     create_table :rule_adjustments do |t|
       t.references :rule, index: true,null:false
@@ -13,4 +13,3 @@ class CreateRuleAdjustments < ActiveRecord::Migration
     end
   end
 end
- 

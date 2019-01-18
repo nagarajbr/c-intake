@@ -1,4 +1,4 @@
-class TblClientNotesRefIntegrity < ActiveRecord::Migration
+class TblClientNotesRefIntegrity < ActiveRecord::Migration[5.2]
   def change
   	 execute <<-SQL
     	ALTER TABLE client_notes

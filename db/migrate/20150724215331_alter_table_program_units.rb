@@ -1,4 +1,4 @@
-class AlterTableProgramUnits < ActiveRecord::Migration
+class AlterTableProgramUnits < ActiveRecord::Migration[5.2]
   def change
   	rename_column :program_units, :work_flow_status, :state
   	rename_column :program_units, :work_flow_rejection_reason, :reason

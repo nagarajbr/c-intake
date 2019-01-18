@@ -1,4 +1,4 @@
-class CreateDataValidations < ActiveRecord::Migration
+class CreateDataValidations < ActiveRecord::Migration[5.2]
   def change
     create_table :data_validations do |t|
     	t.integer :client_id,null:false

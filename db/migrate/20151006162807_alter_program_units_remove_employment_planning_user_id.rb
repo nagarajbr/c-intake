@@ -1,4 +1,4 @@
-class AlterProgramUnitsRemoveEmploymentPlanningUserId < ActiveRecord::Migration
+class AlterProgramUnitsRemoveEmploymentPlanningUserId < ActiveRecord::Migration[5.2]
   def up
   	 remove_column :program_units, :employment_planning_user_id
   end

@@ -1,4 +1,4 @@
-class CreateExpectedWorkParticipationHours < ActiveRecord::Migration
+class CreateExpectedWorkParticipationHours < ActiveRecord::Migration[5.2]
   def change
     create_table :expected_work_participation_hours do |t|
     	t.integer :service_program_id, null: false

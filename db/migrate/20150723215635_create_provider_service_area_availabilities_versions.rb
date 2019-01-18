@@ -1,4 +1,4 @@
-class CreateProviderServiceAreaAvailabilitiesVersions < ActiveRecord::Migration
+class CreateProviderServiceAreaAvailabilitiesVersions < ActiveRecord::Migration[5.2]
   def change
     create_table :provider_area_avail_versions do |t|
       t.string   :item_type, :null => false

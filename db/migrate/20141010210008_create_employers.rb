@@ -1,4 +1,4 @@
-class CreateEmployers < ActiveRecord::Migration
+class CreateEmployers < ActiveRecord::Migration[5.2]
   def change
     create_table :employers do |t|
     t.integer 			:federal_ein , null:false

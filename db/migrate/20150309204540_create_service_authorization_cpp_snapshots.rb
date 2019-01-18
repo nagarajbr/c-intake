@@ -1,4 +1,4 @@
-class CreateServiceAuthorizationCppSnapshots < ActiveRecord::Migration
+class CreateServiceAuthorizationCppSnapshots < ActiveRecord::Migration[5.2]
   def change
     create_table :service_authorization_cpp_snapshots do |t|
     	t.integer :career_pathway_plan_id,null:false

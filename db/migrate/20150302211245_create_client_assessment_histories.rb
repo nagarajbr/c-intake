@@ -1,4 +1,4 @@
-class CreateClientAssessmentHistories < ActiveRecord::Migration
+class CreateClientAssessmentHistories < ActiveRecord::Migration[5.2]
   def change
     create_table :client_assessment_histories do |t|
     	t.integer :parent_primary_key_id,null:false

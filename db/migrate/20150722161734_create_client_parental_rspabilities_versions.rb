@@ -1,4 +1,4 @@
-class CreateClientParentalRspabilitiesVersions < ActiveRecord::Migration
+class CreateClientParentalRspabilitiesVersions < ActiveRecord::Migration[5.2]
   def change
     create_table :clnt_parent_rspability_versions do |t|
      t.string   :item_type, :null => false

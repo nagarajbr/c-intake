@@ -1,4 +1,4 @@
-class CreateClientScoresVersions < ActiveRecord::Migration
+class CreateClientScoresVersions < ActiveRecord::Migration[5.2]
   def change
     create_table :client_scores_versions do |t|
       t.string   :item_type, :null => false

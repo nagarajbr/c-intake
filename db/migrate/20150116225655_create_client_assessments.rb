@@ -1,4 +1,4 @@
-class CreateClientAssessments < ActiveRecord::Migration
+class CreateClientAssessments < ActiveRecord::Migration[5.2]
   def change
     create_table :client_assessments do |t|
     	t.integer :client_id,  null:false

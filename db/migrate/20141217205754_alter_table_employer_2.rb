@@ -1,4 +1,4 @@
-class AlterTableEmployer2 < ActiveRecord::Migration
+class AlterTableEmployer2 < ActiveRecord::Migration[5.2]
   def change
   	change_column :employers, :federal_ein, :string, limit: 9
   	change_column :employers, :state_ein, :string, limit: 12

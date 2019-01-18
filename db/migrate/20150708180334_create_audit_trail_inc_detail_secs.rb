@@ -1,4 +1,4 @@
-class CreateAuditTrailIncDetailSecs < ActiveRecord::Migration
+class CreateAuditTrailIncDetailSecs < ActiveRecord::Migration[5.2]
   def change
     create_table :audit_trail_inc_detail_secs do |t|
  	 t.references :audit_trail_masters, index: true, null:false

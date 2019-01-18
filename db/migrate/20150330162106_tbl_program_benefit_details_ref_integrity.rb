@@ -1,4 +1,4 @@
-class TblProgramBenefitDetailsRefIntegrity < ActiveRecord::Migration
+class TblProgramBenefitDetailsRefIntegrity < ActiveRecord::Migration[5.2]
   def change
   	 execute <<-SQL
   		ALTER TABLE program_wizards

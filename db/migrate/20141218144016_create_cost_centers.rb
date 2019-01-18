@@ -1,4 +1,4 @@
-class CreateCostCenters < ActiveRecord::Migration
+class CreateCostCenters < ActiveRecord::Migration[5.2]
   def change
     create_table :cost_centers do |t|
 

@@ -1,4 +1,4 @@
-class AlterHouseholdMembersDrugScreeningAnswerFields < ActiveRecord::Migration
+class AlterHouseholdMembersDrugScreeningAnswerFields < ActiveRecord::Migration[5.2]
   def change
   	add_column :household_members, :drug_screening_question1_answer_flag, "char(1)"
   	add_column :household_members, :drug_screening_question2_answer_flag, "char(1)"

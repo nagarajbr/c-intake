@@ -1,4 +1,4 @@
-class CreateAssessmentBarrierRecommendationCppSnapshots < ActiveRecord::Migration
+class CreateAssessmentBarrierRecommendationCppSnapshots < ActiveRecord::Migration[5.2]
   def change
     create_table :assessment_barrier_recommendation_cpp_snapshots do |t|
     	 t.integer :career_pathway_plan_id, null:false

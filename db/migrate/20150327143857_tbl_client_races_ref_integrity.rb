@@ -1,4 +1,4 @@
-class TblClientRacesRefIntegrity < ActiveRecord::Migration
+class TblClientRacesRefIntegrity < ActiveRecord::Migration[5.2]
   def change
   	change_column :client_races, :client_id, :integer, null:false
   	change_column :client_races, :race_id, :integer, null:false

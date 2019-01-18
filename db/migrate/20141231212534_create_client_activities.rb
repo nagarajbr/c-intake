@@ -1,4 +1,4 @@
-class CreateClientActivities < ActiveRecord::Migration
+class CreateClientActivities < ActiveRecord::Migration[5.2]
   def change
     create_table :client_activities do |t|
     	 t.integer :program_unit_id,null: false

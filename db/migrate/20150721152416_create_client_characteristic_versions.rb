@@ -1,4 +1,4 @@
-class CreateClientCharacteristicVersions < ActiveRecord::Migration
+class CreateClientCharacteristicVersions < ActiveRecord::Migration[5.2]
   def change
     create_table :client_characteristic_versions do |t|
       t.string   :item_type, :null => false

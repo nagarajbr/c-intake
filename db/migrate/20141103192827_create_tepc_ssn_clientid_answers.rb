@@ -1,4 +1,4 @@
-class CreateTepcSsnClientidAnswers < ActiveRecord::Migration
+class CreateTepcSsnClientidAnswers < ActiveRecord::Migration[5.2]
   def change
     create_table :tepc_ssn_clientid_answer do |t|
     	t.integer :clientid

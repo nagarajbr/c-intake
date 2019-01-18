@@ -1,4 +1,4 @@
-class CreatePregnancies < ActiveRecord::Migration
+class CreatePregnancies < ActiveRecord::Migration[5.2]
   def change
     create_table :pregnancies do |t|
 	    t.references :client, index: true, null: false

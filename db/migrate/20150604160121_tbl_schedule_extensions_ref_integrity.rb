@@ -1,4 +1,4 @@
-class TblScheduleExtensionsRefIntegrity < ActiveRecord::Migration
+class TblScheduleExtensionsRefIntegrity < ActiveRecord::Migration[5.2]
   def change
   	execute <<-SQL
     	ALTER TABLE schedule_extensions

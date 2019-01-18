@@ -1,4 +1,4 @@
-class CreateRuleDateParamDetails < ActiveRecord::Migration
+class CreateRuleDateParamDetails < ActiveRecord::Migration[5.2]
   def change
     create_table :rule_date_param_details do |t|
       t.references :rule, index: true,null:false

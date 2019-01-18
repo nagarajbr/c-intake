@@ -1,4 +1,4 @@
-class AddNewColumnToSanctionsTable < ActiveRecord::Migration
+class AddNewColumnToSanctionsTable < ActiveRecord::Migration[5.2]
   def change
   	add_column :sanctions, :compliance_office_id, :string
   end

@@ -1,4 +1,4 @@
-class CreateLocalOfficeInformations < ActiveRecord::Migration
+class CreateLocalOfficeInformations < ActiveRecord::Migration[5.2]
   def change
     create_table :local_office_informations do |t|
       t.references :code_table_item, index: true

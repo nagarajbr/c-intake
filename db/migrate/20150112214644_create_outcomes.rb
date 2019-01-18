@@ -1,4 +1,4 @@
-class CreateOutcomes < ActiveRecord::Migration
+class CreateOutcomes < ActiveRecord::Migration[5.2]
   def change
     create_table :outcomes do |t|
        t.integer :outcome_entity

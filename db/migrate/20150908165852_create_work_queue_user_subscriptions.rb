@@ -1,4 +1,4 @@
-class CreateWorkQueueUserSubscriptions < ActiveRecord::Migration
+class CreateWorkQueueUserSubscriptions < ActiveRecord::Migration[5.2]
   def change
     create_table :work_queue_user_subscriptions do |t|
     	t.integer :user_id , null:false

@@ -1,4 +1,4 @@
-class AlterEducationEffort < ActiveRecord::Migration
+class AlterEducationEffort < ActiveRecord::Migration[5.2]
 
   def change
      remove_column :educations, :effort

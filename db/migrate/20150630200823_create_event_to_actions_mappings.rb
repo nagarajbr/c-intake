@@ -1,4 +1,4 @@
-class CreateEventToActionsMappings < ActiveRecord::Migration
+class CreateEventToActionsMappings < ActiveRecord::Migration[5.2]
   def change
     create_table :event_to_actions_mappings do |t|
     	t.integer :event_type

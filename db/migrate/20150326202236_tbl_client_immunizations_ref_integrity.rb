@@ -1,4 +1,4 @@
-class TblClientImmunizationsRefIntegrity < ActiveRecord::Migration
+class TblClientImmunizationsRefIntegrity < ActiveRecord::Migration[5.2]
   def change
   	change_column :client_immunizations, :immunizations_record, "char(1)"
 

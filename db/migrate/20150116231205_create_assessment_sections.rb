@@ -1,4 +1,4 @@
-class CreateAssessmentSections < ActiveRecord::Migration
+class CreateAssessmentSections < ActiveRecord::Migration[5.2]
   def change
     create_table :assessment_sections do |t|
       t.string :title, null:false

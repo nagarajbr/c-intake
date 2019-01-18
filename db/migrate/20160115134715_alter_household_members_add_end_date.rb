@@ -1,4 +1,4 @@
-class AlterHouseholdMembersAddEndDate < ActiveRecord::Migration
+class AlterHouseholdMembersAddEndDate < ActiveRecord::Migration[5.2]
   def change
   		remove_column :household_members, :household_member_role
   		remove_column :household_members, :household_participation_status

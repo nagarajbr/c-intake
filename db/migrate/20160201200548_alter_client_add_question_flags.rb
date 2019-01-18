@@ -1,4 +1,4 @@
-class AlterClientAddQuestionFlags < ActiveRecord::Migration
+class AlterClientAddQuestionFlags < ActiveRecord::Migration[5.2]
   def change
   	add_column :clients, :education_add_flag, :string, limit: 1
   	add_column :clients, :earned_income_flag, :string, limit: 1

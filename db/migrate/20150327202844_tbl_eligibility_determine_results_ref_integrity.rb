@@ -1,4 +1,4 @@
-class TblEligibilityDetermineResultsRefIntegrity < ActiveRecord::Migration
+class TblEligibilityDetermineResultsRefIntegrity < ActiveRecord::Migration[5.2]
   def change
   	# program wizards Table -start
   	change_column :program_wizards, :run_id, :integer, null:false

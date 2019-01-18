@@ -1,4 +1,4 @@
-class CreateServiceAuthorizations < ActiveRecord::Migration
+class CreateServiceAuthorizations < ActiveRecord::Migration[5.2]
   def change
     create_table :service_authorizations do |t|
       t.references :provider, index: true, null: false

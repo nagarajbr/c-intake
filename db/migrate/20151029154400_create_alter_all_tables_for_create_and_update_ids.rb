@@ -1,4 +1,4 @@
-class CreateAlterAllTablesForCreateAndUpdateIds < ActiveRecord::Migration
+class CreateAlterAllTablesForCreateAndUpdateIds < ActiveRecord::Migration[5.2]
   def change
 
 

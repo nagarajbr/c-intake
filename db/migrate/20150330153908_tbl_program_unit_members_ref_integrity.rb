@@ -1,4 +1,4 @@
-class TblProgramUnitMembersRefIntegrity < ActiveRecord::Migration
+class TblProgramUnitMembersRefIntegrity < ActiveRecord::Migration[5.2]
   def change
   	change_column :program_unit_members, :client_id, :integer, null:false
 

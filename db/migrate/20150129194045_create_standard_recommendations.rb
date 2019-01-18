@@ -1,4 +1,4 @@
-class CreateStandardRecommendations < ActiveRecord::Migration
+class CreateStandardRecommendations < ActiveRecord::Migration[5.2]
   def change
     create_table :standard_recommendations do |t|
       t.integer :barrier_id, null:false

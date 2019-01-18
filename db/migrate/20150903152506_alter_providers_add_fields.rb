@@ -1,4 +1,4 @@
-class AlterProvidersAddFields < ActiveRecord::Migration
+class AlterProvidersAddFields < ActiveRecord::Migration[5.2]
   def change
 
   	add_column :providers, :provider_registered_office, :integer
