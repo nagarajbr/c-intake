@@ -1,28 +1,26 @@
-== README
+Prerequisites
+The setups steps expect following tools installed on the system.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Github
+Ruby '2.5.3'
+Rails 5.2.2
+PG database
 
-Things you may want to cover:
+1. Check out the repository
+git clone https://github.com/nagarajbr/c-intake.git
+change to directory and run 'bundle install'
 
-* Ruby version
+2. Create database.yml file
+Edit the database configuration as required.
 
-* System dependencies
+3. Create and setup the database
+Run the following commands to create and setup the database.
 
-* Configuration
+bundle exec rake db:create
+bundle exec rake db:setup
 
-* Database creation
+4. Start the Rails server
+You can start the rails server using the command given below.
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+bundle exec rails s
+And now you can visit the site with the URL http://localhost:3000
