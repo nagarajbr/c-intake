@@ -23,8 +23,9 @@ default: &default
 
 development:
   <<: *default
-  host: tanf-devdb.state.ar.us
-  database: arwins_tanf_development_demo1
-  username: arwins_tanf
-  password: tanf_arwins
+  host: localhost
+  port: 5432
+  database: tanf_demo
+  username: postgres
+  password: abcd1234
 
